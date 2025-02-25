@@ -15,22 +15,39 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-      - uses: actions/checkout@v2
-        with:
-          submodules: true
-      - name: Build And Deploy
-        id: builddeploy
-        uses: Azure/static-web-apps-deploy@v1
-        with:
-          azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_COAST_0E5B0471E }}
-          repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
-          action: "upload"
-          ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
-          # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
-          app_location: "/" # App source code path
-          api_location: "" # Api source code path - optional
-          output_location: "public" # Built app content directory - optional
-          ###### End of Repository/Build Configurations ######
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
+        lfs: false
+    - name:Install Hugo
+      uses: peaceiris/actions-hugo@v2
+      with:
+        hugo-version: '0.131.0'
+        extended: true
+    
+    - name: Install Node.js (for Azure Static Web Apps)
+      uses: actions/setup-node@v2
+      with:
+          node-version: '16'  # Ensure Node.js is installed as Oryx requires i    
+    - name: Install NPM Modules
+      run: npm install
+
+    - name: Build Hugo site
+      run: hugo
+
+    - name: Build and Depoly
+      id: builddeploy
+      uses: Azure/static-web-apps-depoloy
+      with:
+        azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_WITTY_COAST_0E5B0471E }}
+        repo_token: ${{ secrets.GITHUB_TOKEN }} # Used for Github integrations (i.e. PR comments)
+        action: "upload"
+        ###### Repository/Build Configurations - These values can be configured to match your app requirements. ######
+        # For more information regarding Static Web App workflow configurations, please visit: https://aka.ms/swaworkflowconfig
+        app_location: "/" # App source code path
+        api_location: "" # Api source code path - optional
+        output_location: "public" # Built app content directory - optional
+        ###### End of Repository/Build Configurations ######
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
