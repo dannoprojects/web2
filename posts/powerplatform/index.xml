@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Power Platform on Danno Projects</title><link>https://www.dannoprojects.com/posts/powerplatform/</link><description>Recent content in Power Platform on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 13 Mar 2022 18:59:41 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/posts/powerplatform/index.xml" rel="self" type="application/rss+xml"/><item><title>Delegation</title><link>https://www.dannoprojects.com/posts/powerplatform/delegation/</link><pubDate>Sun, 13 Mar 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/delegation/</guid><description>&lt;p>I’ve been working on a canvas app to track and manage major IT projects. The app uses a SharePoint list as a datasource. Our executives also use the app and the PowerBI dashboard to review projects that require executive approval in the form of what we call our Change Advisory Board (CAB).&lt;/p>
+&lt;p>I recieved feedback from a member of our CAB. “It would be nice to separate out the completed projects from all the other projects.”&lt;/p></description></item><item><title>Hiding a Button</title><link>https://www.dannoprojects.com/posts/powerplatform/hiding-a-button/</link><pubDate>Tue, 01 Feb 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/hiding-a-button/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>You only want certain people to use a button on an app. The button can be for navigation, or an action. It doesn&amp;rsquo;t matter.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;p>Use an Azure Active Directory group to control who can use see the button. This makes managing permissions for the button very easy. You don&amp;rsquo;t need to change the app, change the group membership.&lt;/p>
+&lt;h5 id="components">Components&lt;/h5>
+&lt;ul>
+&lt;li>Azure AD Group with members&lt;/li>
+&lt;li>Azure AD Group Object ID&lt;/li>
+&lt;li>Some onStart code&lt;/li>
+&lt;li>A button you only want certain people to see&lt;/li>
+&lt;li>Office 365 Groups Connector&lt;/li>
+&lt;li>Office 365 Users Connector&lt;/li>
+&lt;/ul>
+&lt;h6 id="azure-ad">Azure AD&lt;/h6>
+&lt;ul>
+&lt;li>Create an Azure AD Group&lt;/li>
+&lt;li>Add members&lt;/li>
+&lt;li>Make a note of the ObjectID&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Sample Group&lt;/strong>&lt;/p></description></item><item><title>Barcode Canvas App</title><link>https://www.dannoprojects.com/posts/powerplatform/powerapps_barcode/</link><pubDate>Sat, 08 Jan 2022 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/powerapps_barcode/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>Barcodes are everywhere, and I needed a barcode scanner. So I made one.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;p>This app started out as a single screen app where I could scan and email myself a barcode. It worked for the couple of odd times I needed a barcode off a piece of hardware.&lt;br>
+After getting a pile of equipment, scanning each item and sending an email approach wasn’t cutting it. I added a screen to my app for collecting many barcodes and emailing the result in an html table.&lt;/p></description></item><item><title>Bingo Canvas App</title><link>https://www.dannoprojects.com/posts/powerplatform/powerappsbingo/</link><pubDate>Wed, 15 Dec 2021 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/powerappsbingo/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>Not really a problem. Just an interesting mini project. The office holiday party is a virtual affair this year. Our leadership wanted to play Bingo to give away some extra gifts. Our web filter blocks pretty much anything that would host an online Bingo game, so I knocked out a Bingo Canvas App.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;ul>
+&lt;li>Canvas App based on American Bingo&lt;/li>
+&lt;li>Random board is generated each time &amp;ldquo;New Game&amp;rdquo; is clicked.&lt;/li>
+&lt;li>Tiles change color when clicked to &amp;lsquo;mark&amp;rsquo; the tile.&lt;/li>
+&lt;/ul>
+&lt;p>Screen shot of a new game board.&lt;/p></description></item><item><title>PowerAutomate with Twilio Integration for Electricity Outages.</title><link>https://www.dannoprojects.com/posts/powerplatform/poweralerts/</link><pubDate>Fri, 05 Nov 2021 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/poweralerts/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>We have a job site where power outages occur more often than we&amp;rsquo;d like. The site engineer and other key staff members need to know when the power fluctuates while they work out a more robust back up power system for their construction requirements. Naturally, we have an APC UPS on site for our network equipment. Why not use that as a monitoring device and get messages to our enginners.&lt;/p></description></item><item><title>SMS Notification PowerApp with Twilio Integration</title><link>https://www.dannoprojects.com/posts/powerplatform/sms/</link><pubDate>Mon, 01 Jun 2020 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/sms/</guid><description>&lt;h3 id="sms-notification-powerapp-with-twilio-integration">SMS Notification PowerApp with Twilio Integration&lt;/h3>
+&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obyashi approximately $5000 per year even if no messages are ever sent. That&amp;rsquo;s five thousand to reserve the right to use the platform.&lt;/p>
+&lt;p>I was asked to take a look at different platforms to reduce cost.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;p>I built a PowerApp that uses a Twilio connector. We pay for the messages that we use at a rate of 0.0075 per message and $1.00 per month to reserve a local number. This solution saved Obayashi about $4990 in cost.&lt;/p></description></item></channel></rss>

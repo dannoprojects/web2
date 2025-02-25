@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Danno Projects</title><link>https://www.dannoprojects.com/</link><description>Recent content on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 24 Mar 2022 18:59:41 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/index.xml" rel="self" type="application/rss+xml"/><item><title>New-TimeSpan</title><link>https://www.dannoprojects.com/posts/powershell/newtimespan/</link><pubDate>Thu, 24 Mar 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powershell/newtimespan/</guid><description>&lt;p>I was investigating an issue with our identity provider and out of date passwords the other day. I needed to do a date comparison to find accounts with expired passwords. In the past I’d used (Get-Date).AddDays() and done an evaluation. It works, but to me the code is hard to read.&lt;/p>
+&lt;p>I stumbled on the New-Timespan cmdlet which creates a timespan object. Creating a timespan object and referencing the days property is so much easier to read when you look at the code.&lt;/p></description></item><item><title>Delegation</title><link>https://www.dannoprojects.com/posts/powerplatform/delegation/</link><pubDate>Sun, 13 Mar 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/delegation/</guid><description>&lt;p>I’ve been working on a canvas app to track and manage major IT projects. The app uses a SharePoint list as a datasource. Our executives also use the app and the PowerBI dashboard to review projects that require executive approval in the form of what we call our Change Advisory Board (CAB).&lt;/p>
+&lt;p>I recieved feedback from a member of our CAB. “It would be nice to separate out the completed projects from all the other projects.”&lt;/p></description></item><item><title>Hiding a Button</title><link>https://www.dannoprojects.com/posts/powerplatform/hiding-a-button/</link><pubDate>Tue, 01 Feb 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/hiding-a-button/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>You only want certain people to use a button on an app. The button can be for navigation, or an action. It doesn&amp;rsquo;t matter.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;p>Use an Azure Active Directory group to control who can use see the button. This makes managing permissions for the button very easy. You don&amp;rsquo;t need to change the app, change the group membership.&lt;/p>
+&lt;h5 id="components">Components&lt;/h5>
+&lt;ul>
+&lt;li>Azure AD Group with members&lt;/li>
+&lt;li>Azure AD Group Object ID&lt;/li>
+&lt;li>Some onStart code&lt;/li>
+&lt;li>A button you only want certain people to see&lt;/li>
+&lt;li>Office 365 Groups Connector&lt;/li>
+&lt;li>Office 365 Users Connector&lt;/li>
+&lt;/ul>
+&lt;h6 id="azure-ad">Azure AD&lt;/h6>
+&lt;ul>
+&lt;li>Create an Azure AD Group&lt;/li>
+&lt;li>Add members&lt;/li>
+&lt;li>Make a note of the ObjectID&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Sample Group&lt;/strong>&lt;/p></description></item><item><title>Barcode Canvas App</title><link>https://www.dannoprojects.com/posts/powerplatform/powerapps_barcode/</link><pubDate>Sat, 08 Jan 2022 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/powerapps_barcode/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>Barcodes are everywhere, and I needed a barcode scanner. So I made one.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;p>This app started out as a single screen app where I could scan and email myself a barcode. It worked for the couple of odd times I needed a barcode off a piece of hardware.&lt;br>
+After getting a pile of equipment, scanning each item and sending an email approach wasn’t cutting it. I added a screen to my app for collecting many barcodes and emailing the result in an html table.&lt;/p></description></item><item><title>Bingo Canvas App</title><link>https://www.dannoprojects.com/posts/powerplatform/powerappsbingo/</link><pubDate>Wed, 15 Dec 2021 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/powerappsbingo/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>Not really a problem. Just an interesting mini project. The office holiday party is a virtual affair this year. Our leadership wanted to play Bingo to give away some extra gifts. Our web filter blocks pretty much anything that would host an online Bingo game, so I knocked out a Bingo Canvas App.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;ul>
+&lt;li>Canvas App based on American Bingo&lt;/li>
+&lt;li>Random board is generated each time &amp;ldquo;New Game&amp;rdquo; is clicked.&lt;/li>
+&lt;li>Tiles change color when clicked to &amp;lsquo;mark&amp;rsquo; the tile.&lt;/li>
+&lt;/ul>
+&lt;p>Screen shot of a new game board.&lt;/p></description></item><item><title>Microsoft Certificed: Power Platform Fundamentals</title><link>https://www.dannoprojects.com/posts/update-posts/powerplatformfundamentals/</link><pubDate>Mon, 29 Nov 2021 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/update-posts/powerplatformfundamentals/</guid><description>&lt;p>I just passed the PL-900 exam today for Power Platform Fundamentals certification. Feels good. Now on to buiding more things.&lt;/p>
+&lt;p>&lt;img src="https://www.dannoprojects.com/posts/update-posts/CERT-Fundamentals-Power-Platform.png" alt="PL-900">&lt;/p></description></item><item><title>PowerAutomate with Twilio Integration for Electricity Outages.</title><link>https://www.dannoprojects.com/posts/powerplatform/poweralerts/</link><pubDate>Fri, 05 Nov 2021 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/poweralerts/</guid><description>&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>We have a job site where power outages occur more often than we&amp;rsquo;d like. The site engineer and other key staff members need to know when the power fluctuates while they work out a more robust back up power system for their construction requirements. Naturally, we have an APC UPS on site for our network equipment. Why not use that as a monitoring device and get messages to our enginners.&lt;/p></description></item><item><title>Starting at Obayashi</title><link>https://www.dannoprojects.com/posts/update-posts/obayashi/</link><pubDate>Tue, 03 Nov 2020 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/update-posts/obayashi/</guid><description>&lt;p>After a number of great years at OmnicomMediaGroup, I&amp;rsquo;ve accecpted a position at Obayashi as a Systems Engineer. It was great working with everyone at OMG, especially Jon Serrette.&lt;/p></description></item><item><title>Hello from new website</title><link>https://www.dannoprojects.com/posts/update-posts/hello/</link><pubDate>Fri, 21 Aug 2020 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/update-posts/hello/</guid><description>&lt;p>‘Hello World!’&lt;/p>
+&lt;p>Now that I’ve gotten that taken care of, onward to other things.&lt;/p>
+&lt;p>I’m a Systems Admin working at OmnicomMediaGroup. Lately I’ve been working on a PowerShell module for API calls into our in house developed onboarding platform.
+In my spare time, I’ve been working on a few Raspberry Pi projects to automate video uploads and transcoding into AWS buckets.&lt;/p>
+&lt;p>As I run across things that interest me, I’ll post about them.&lt;/p></description></item><item><title>SMS Notification PowerApp with Twilio Integration</title><link>https://www.dannoprojects.com/posts/powerplatform/sms/</link><pubDate>Mon, 01 Jun 2020 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/sms/</guid><description>&lt;h3 id="sms-notification-powerapp-with-twilio-integration">SMS Notification PowerApp with Twilio Integration&lt;/h3>
+&lt;h4 id="problem">Problem&lt;/h4>
+&lt;p>Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obyashi approximately $5000 per year even if no messages are ever sent. That&amp;rsquo;s five thousand to reserve the right to use the platform.&lt;/p>
+&lt;p>I was asked to take a look at different platforms to reduce cost.&lt;/p>
+&lt;h4 id="solution">Solution&lt;/h4>
+&lt;p>I built a PowerApp that uses a Twilio connector. We pay for the messages that we use at a rate of 0.0075 per message and $1.00 per month to reserve a local number. This solution saved Obayashi about $4990 in cost.&lt;/p></description></item><item><title>Go বেসিক</title><link>https://www.dannoprojects.com/notes/go/basic/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/_index.bn/</guid><description/></item><item><title>Introduction</title><link>https://www.dannoprojects.com/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Hello World&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>A sample go program is show here.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">package&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">import&lt;/span> &lt;span style="color:#e6db74">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">message&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">greetMe&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;world&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#a6e22e">message&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">greetMe&lt;/span>(&lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#66d9ef">string&lt;/span>) &lt;span style="color:#66d9ef">string&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello, &amp;#34;&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#a6e22e">name&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#e6db74">&amp;#34;!&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Run the program as below:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>$ go run hello.go
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Declaring Variables -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Variables&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>&lt;strong>Normal Declaration:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span> &lt;span style="color:#66d9ef">string&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">msg&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>&lt;strong>Shortcut:&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">msg&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Declaring Constants -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Constants&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#a6e22e">Phi&lt;/span> = &lt;span style="color:#ae81ff">1.618&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Basic Types</title><link>https://www.dannoprojects.com/notes/go/basic/types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/types/</guid><description>&lt;!-- String Type -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Strings&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">str&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Multiline string&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">str&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">`Multiline
+&lt;/span>&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#e6db74">string`&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Number Types -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Numbers&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;p>Typical types&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#75715e">// int&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">3.&lt;/span> &lt;span style="color:#75715e">// float64&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">3&lt;/span> &lt;span style="color:#f92672">+&lt;/span> &lt;span style="color:#ae81ff">4i&lt;/span> &lt;span style="color:#75715e">// complex128&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">num&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> byte(&lt;span style="color:#e6db74">&amp;#39;a&amp;#39;&lt;/span>) &lt;span style="color:#75715e">// byte (alias for uint8)&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Other Types&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">u&lt;/span> &lt;span style="color:#66d9ef">uint&lt;/span> = &lt;span style="color:#ae81ff">7&lt;/span> &lt;span style="color:#75715e">// uint (unsigned)&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">p&lt;/span> &lt;span style="color:#66d9ef">float32&lt;/span> = &lt;span style="color:#ae81ff">22.7&lt;/span> &lt;span style="color:#75715e">// 32-bit float&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!----------- Arrays ------>
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Arrays&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">// var numbers [5]int&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">numbers&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> [&lt;span style="color:#f92672">...&lt;/span>]&lt;span style="color:#66d9ef">int&lt;/span>{&lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>, &lt;span style="color:#ae81ff">0&lt;/span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Pointers -->
+&lt;div class="note-card medium-note">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Pointers&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">main&lt;/span> () {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">b&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#a6e22e">getPointer&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Value is&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">b&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">func&lt;/span> &lt;span style="color:#a6e22e">getPointer&lt;/span> () (&lt;span style="color:#a6e22e">myPointer&lt;/span> &lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#66d9ef">int&lt;/span>) {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">a&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">234&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#a6e22e">a&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">a&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> new(&lt;span style="color:#66d9ef">int&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#a6e22e">a&lt;/span> = &lt;span style="color:#ae81ff">234&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pointers point to a memory location of a variable. Go is fully garbage-collected.&lt;/p></description></item><item><title>অ্যাডভান্সড</title><link>https://www.dannoprojects.com/notes/go/advanced/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/advanced/_index.bn/</guid><description/></item><item><title>Flow Control</title><link>https://www.dannoprojects.com/notes/go/basic/flow-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/flow-control/</guid><description>&lt;!-- Condition -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;sunday&amp;#34;&lt;/span> &lt;span style="color:#f92672">||&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;saturday&amp;#34;&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">rest&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;monday&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#a6e22e">isTired&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">groan&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">work&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">_&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">doThing&lt;/span>(); &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">nil&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Uh oh&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Switch -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Switch&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">switch&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#e6db74">&amp;#34;sunday&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// cases don&amp;#39;t &amp;#34;fall through&amp;#34; by default!&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">fallthrough&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">case&lt;/span> &lt;span style="color:#e6db74">&amp;#34;saturday&amp;#34;&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">rest&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">default&lt;/span>:
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">work&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Loop -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Loop&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>; &lt;span style="color:#a6e22e">count&lt;/span> &lt;span style="color:#f92672">&amp;lt;=&lt;/span> &lt;span style="color:#ae81ff">10&lt;/span>; &lt;span style="color:#a6e22e">count&lt;/span>&lt;span style="color:#f92672">++&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;My counter is at&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">count&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">entry&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> []&lt;span style="color:#66d9ef">string&lt;/span>{&lt;span style="color:#e6db74">&amp;#34;Jack&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>,&lt;span style="color:#e6db74">&amp;#34;Jones&amp;#34;&lt;/span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#a6e22e">i&lt;/span>, &lt;span style="color:#a6e22e">val&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#66d9ef">range&lt;/span> &lt;span style="color:#a6e22e">entry&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Printf&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;At position %d, the character %s is present\n&amp;#34;&lt;/span>, &lt;span style="color:#a6e22e">i&lt;/span>, &lt;span style="color:#a6e22e">val&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">n&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">0&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">x&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#ae81ff">42&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">for&lt;/span> &lt;span style="color:#a6e22e">n&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#a6e22e">x&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">n&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">guess&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>File Manipulation</title><link>https://www.dannoprojects.com/notes/go/advanced/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/advanced/files/</guid><description>&lt;!-- Condition -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;sunday&amp;#34;&lt;/span> &lt;span style="color:#f92672">||&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;saturday&amp;#34;&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">rest&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> &lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">day&lt;/span> &lt;span style="color:#f92672">==&lt;/span> &lt;span style="color:#e6db74">&amp;#34;monday&amp;#34;&lt;/span> &lt;span style="color:#f92672">&amp;amp;&amp;amp;&lt;/span> &lt;span style="color:#a6e22e">isTired&lt;/span>() {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">groan&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>} &lt;span style="color:#66d9ef">else&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">work&lt;/span>()
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#a6e22e">_&lt;/span>, &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#a6e22e">doThing&lt;/span>(); &lt;span style="color:#a6e22e">err&lt;/span> &lt;span style="color:#f92672">!=&lt;/span> &lt;span style="color:#66d9ef">nil&lt;/span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#a6e22e">fmt&lt;/span>.&lt;span style="color:#a6e22e">Println&lt;/span>(&lt;span style="color:#e6db74">&amp;#34;Uh oh&amp;#34;&lt;/span>)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Bash Variables</title><link>https://www.dannoprojects.com/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/bash/basic/</guid><description>&lt;!-- Variable -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Variable&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>NAME&lt;span style="color:#f92672">=&lt;/span>&lt;span style="color:#e6db74">&amp;#34;John&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo $NAME
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$NAME&lt;span style="color:#e6db74">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>echo &lt;span style="color:#e6db74">&amp;#34;&lt;/span>&lt;span style="color:#e6db74">${&lt;/span>NAME&lt;span style="color:#e6db74">}&lt;/span>&lt;span style="color:#e6db74">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;!-- Condition -->
+&lt;div class="note-card ">
+&lt;div class="item">
+&lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
+&lt;div class="card">
+&lt;div class="card-body">&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-bash" data-lang="bash">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">if&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> -z &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$string&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;String is empty&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">elif&lt;/span> &lt;span style="color:#f92672">[[&lt;/span> -n &lt;span style="color:#e6db74">&amp;#34;&lt;/span>$string&lt;span style="color:#e6db74">&amp;#34;&lt;/span> &lt;span style="color:#f92672">]]&lt;/span>; &lt;span style="color:#66d9ef">then&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> echo &lt;span style="color:#e6db74">&amp;#34;String is not empty&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">fi&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;/div></description></item><item><title>Go এর নোট সমূহ</title><link>https://www.dannoprojects.com/notes/go/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/_index.bn/</guid><description>&lt;h1 id="go-notes">Go Notes&lt;/h1></description></item><item><title>নোট সমূহ</title><link>https://www.dannoprojects.com/notes/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/_index.bn/</guid><description/></item><item><title>ব্যাশের নোট সমূহ</title><link>https://www.dannoprojects.com/notes/bash/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/bash/_index.bn/</guid><description>&lt;h1 id="bash-notes">Bash Notes&lt;/h1></description></item></channel></rss>
