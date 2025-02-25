@@ -10,37 +10,38 @@ section:
 
 
 # Your accomplishments
+
 accomplishments:
-- name: Linux Foundation System Administrator
-  timeline: "March 2018 - March 2019"
-  organization:
-    name: Linux Foundation
-    url: https://www.linuxfoundation.org
-  courseOverview: This course helps to understand the key concepts such as networking, storage, security, maintenance, logging and monitoring, application lifecycle, troubleshooting, API object primitives etc. It also help to grow the ability to establish basic use-cases for end users.
-  certificateURL: "https://example.com"
 
-- name: Machine Learning
-  timeline: "Jun 2020 - Jan 2021"
+- name: "Microsoft Certified: Security, Compliance, and Identity Fundamentals"
+  timeline: "September 2024"
   organization:
-    name: Coursera
-    url: https://www.coursera.org
-  courseOverview: "This course provides a broad introduction to machine learning, datamining, and statistical pattern recognition. Topics include: (i) Supervised learning (parametric/non-parametric algorithms, support vector machines, kernels, neural networks). (ii) Unsupervised learning (clustering, dimensionality reduction, recommender systems, deep learning). (iii) Best practices in machine learning (bias/variance theory; innovation process in machine learning and AI)."
-  certificateURL: "https://example.com"
+    name: Microsoft
+    url: "https://learn.microsoft.com/en-us/certifications/security-compliance-and-identity-fundamentals/"
+  courseOverview: This certification validates foundational knowledge of security, compliance, and identity concepts within Microsoft solutions, including identity management, access controls, and regulatory compliance.
+  certificateURL: "https://learn.microsoft.com/api/credentials/share/en-us/DanRowe-3582/EB5688C1CA35116B?sharingId=68506CB11A989A23"
 
-- name: Grokking the System Design Interview
-  timeline: "Jan 2018 - Sept 2018"
+- name: "Microsoft Certified: Power Platform Fundamentals" 
+  timeline: "November 2021"
   organization:
-    name: educative
-    url: https://www.educative.io
-  courseOverview: This course is a complete guide to master the SDIs. It is created by hiring managers who’ve been working at Google, Facebook, Microsoft, and Amazon. We've carefully chosen a set of questions that have not only been repeatedly asked at top companies, but also provide a thorough experience to handle any system design problem.
-  certificateURL: "https://example.com"
+    name: Microsoft
+    url: https://docs.microsoft.com/en-us/learn/certifications/exams/pl-900
+  courseOverview: Earners of the Power Platform Fundamentals certification are users who aspire to improve productivity by automating business processes, analyzing data to produce business insights, and acting more effectively by creating simple app experiences.
+  certificateURL: "https://www.credly.com/badges/20f29ea7-81ca-419e-9fde-2316e5302cfd"
 
-- name: Mastering Multithreading Programming with Go (Golang)
-  timeline: "Nov 2017 - Mar 2018"
+- name: "Microsoft Certified: Azure Fundamentals"
+  timeline: "April 2021"
   organization:
-    name: Udemy
-    url: https://www.udemy.com
-  courseOverview: Discover how to create responsive and high performance software. Develop programs with Golang that are highly Concurrent and Parallel. Improve your programming skills in Go with more advanced, multithreading topics.
-  certificateURL: "https://example.com"
- 
+    name: Microsoft
+    url: https://docs.microsoft.com/en-us/learn/certifications/exams/az-900
+  courseOverview: Foundational knowledge of cloud concepts, Azure Services, Azure workloads, security, privacy, pricing, and support.
+  certificateURL: "https://www.credly.com/badges/c70073c4-cf59-4bb5-8aed-d28981b967b1/public_url"
+
+- name: AWS Certified Cloud Practitioner
+  timeline: "June 2019"
+  organization:
+    name: AWS
+    url: https://www.credly.com/organizations/amazon-web-services/badges
+  courseOverview: Earners of this certification have a fundamental understanding of IT services and their uses in the AWS Cloud. They demonstrated cloud fluency and foundational AWS knowledge. Badge owners are able to identify essential AWS services necessary to set up AWS-focused projects.
+  certificateURL: "https://www.credly.com/badges/a31bcbbc-ade5-4a12-9315-544ac2eb7b24/public_url"
 

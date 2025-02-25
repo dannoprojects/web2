@@ -8,94 +8,48 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Software Engineer
+designation: Systems Engineer
 # your company information
 company:
-  name: Example Co.
-  url: "https://www.example.com"
+  name: Project Partners
+  url: "https://www.projectp.com"
 
 # your resume. this file path should be relative to you "static" directory
-# Dreprecated. Use resourceLinks instead.
 # resume: "files/resume.pdf"
-
+# a new comment
 # a summary about you
-summary: 'I am a passionate software engineer with x years of working experience. I built OSS tools for [Kubernetes](https://kubernetes.io/) using GO. My tools help people to deploy their workloads in Kubernetes. Sometimes, I work on some fun projects such as writing a theme, etc.'
+summary: "As a Systems Engineer at Project Partners, I specialize in managing and optimizing critical systems while developing automation \
+ solutions to streamline operations. My expertise lies in designing and implementing efficient workflows that reduce manual effort, enhance system \ 
+ reliability, and improve overall productivity. I leverage automation to simplify complex processes, ensuring \ 
+ seamless integrations between various platforms and tools. With a strong background in system administration, cloud technologies, and \ 
+ process automation, I focus on building scalable and sustainable solutions that drive operational efficiency. \n
+ 
+ Beyond my professional work, I am a Certified Motorcycle Safety Instructor, helping riders develop the skills they need for safe and responsible motorcycling. Additionally, I enjoy 3D printing as a hobby, exploring innovative designs and creating functional projects that merge technology and creativity
+ "
 
 # your social links
 # give as many as you want. use font-awesome for the icons.
 socialLinks:
-- name: Email
-  icon: "fas fa-envelope"
-  url: "example@gmail.com"
-
 - name: Github
   icon: "fab fa-github"
-  url: "https://www.github.com/example"
-
-- name: Stackoverflow
-  icon: "fab fa-stack-overflow"
-  url: "#"
-
+  url: "https://github.com/dannoprojects/"
 - name: LinkedIn
   icon: "fab fa-linkedin"
-  url: "#"
+  url: "https://www.linkedin.com/in/dan-rowe-75a33413/"
 
-- name: Twitter
-  icon: "fab fa-twitter"
-  url: "#"
-
-- name: Facebook
-  icon: "fab fa-facebook"
-  url: "#"
-
-- name: Mastadon
-  icon: "fab fa-mastodon"
-  url: "#"
-  rel: "me noopener"
-
-- name: ResearchGate
-  icon: "fab fa-researchgate"
-  url: "https://www.researchgate.net/profile/john-doe"
-
-# You can put custom buttons to link your relevant resources.
-# For example, you can put link for your resume.
-resourceLinks:
-- title: "My Resume"
-  url: "files/resume.pdf"
-
-# Show your badges
-# You can show your verifiable certificates from https://www.credly.com.
-# You can also show a circular bar indicating the level of expertise on a certain skill
-badges:
-- type: certification
-  name: Certified Kubernetes Security Specialist
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/f4bf92ed-8985-40b2-bc07-2f9308780854/kubernetes-security-specialist-logo-examdev.png"
-
-- type: certification
-  name: Istio and IBM Cloud Kubernetes Service
-  url: "https://www.credly.com/org/the-linux-foundation/badge/exam-developer-certified-kubernetes-security-specialist"
-  badge: "https://images.credly.com/size/680x680/images/8d34d489-84bf-4861-a4a0-9e9d68318c5c/Beyond_basics_of_Istio_on_Cloud_v2.png"
-
-- type: certification
-  name: Artificial Intelligence and Machine Learning
-  url: "https://www.credly.com/org/grupo-bancolombia/badge/artificial-intelligence-and-machine-learning"
-  badge: "https://images.credly.com/size/680x680/images/e027514f-9d07-4b29-862f-fe21a8aaebf1/ae.png"
-
-- type: soft-skill-indicator
-  name: Leadership
-  percentage: 85
+# your soft skills just added a comment
+# give the percentage between 50 to 100 with 5 intervals.
+# currently supported colors: blue, yellow, pink, green, sky, orange
+softSkills:
+- name: Collaboration
+  percentage: 100
   color: blue
-
-- type: soft-skill-indicator
-  name: Team Work
-  percentage: 90
-  color: yellow
-
-- type: soft-skill-indicator
-  name: Hard Working
-  percentage: 85
+- name: Project Management
+  percentage: 100
   color: orange
+- name: Self Directed
+  percentage: 100
+  color: yellow
 
 # you can also provide color code instead of the color name
 # - type: soft-skill-indicator

@@ -13,59 +13,79 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Basic
-  filter: "basic"
-- name: Language
-  filter: "language"
-- name: Container
-  filter: "container"
-- name: Others
-  filter: "others"
+- name: Scripting & Automation
+  filter: "scripting-automation"
+- name: Cloud & Infrastructure
+  filter: "cloud-infrastructure"
+- name: Development & Version Control
+  filter: "development-version-control"
+- name: Data & Reporting
+  filter: "data-reporting"
+- name: Operating Systems & DevOps
+  filter: "os-devops"
 
 # Your Skills.
 # Give a summary of you each skill in the summary section.
 skills:
-- name: Kubernetes
-  logo: /images/sections/skills/kubernetes.png
-  summary: "Capable of deploying, managing application on Kubernetes. Experienced in writing Kubernetes controllers for CRDs."
-  categories: ["container"]
-  url: "https://kubernetes.io/"
+- name: PowerShell
+  logo: /images/sections/skills/powershell.png
+  summary: "Primary automation and scripting language used to manage systems or build complete modules."
+  categories: ["scripting-automation"]
+  url: "https://docs.microsoft.com/en-us/powershell/"
 
-- name: Go Development
-  logo: /images/sections/skills/go.png
-  summary: "Using as the main language for professional development. Capable of writing scalable, testable, and maintainable program."
-  categories: ["basic", "language"]
-  url: "https://golang.org/"
+- name: Python
+  # logo: /images/sections/skills/python.png
+  summary: "Versatile programming language used for automation, scripting, data analysis, and backend development."
+  categories: ["scripting-automation", "development-version-control"]
+  url: "https://www.python.org/"
 
-- name: Cloud Computing
-  logo: /images/sections/skills/cloud.png
-  summary: "Worked with most of the major clouds such as GCP, AWS, Azure etc."
-  categories: ["others"]
+  
+- name: Power Automate
+  logo: /images/sections/skills/powerautomate.png
+  summary: "Created work flow automation to reduce manual effort."
+  categories: ["scripting-automation"]
+  url: "https://techcommunity.microsoft.com/t5/power-automate/ct-p/PowerAutomate"
+
+- name: Power Apps
+  logo: /images/sections/skills/powerapp.png
+  summary: "Created custom applications to improve productivity."
+  categories: ["scripting-automation"]
+  url: "https://powerapps.microsoft.com/en-us/"
+
+- name: Power BI
+  logo: /images/sections/skills/powerbi.png
+  summary: "Build interactive dashboards and reports"
+  categories: ["data-reporting"]
+  url: "https://community.powerbi.com/"
+
+- name: Alteryx
+  # logo: /images/sections/skills/alteryx.svg
+  summary: "Data analytics and automation platform used for ETL, workflow automation, and advanced data processing."
+  categories: ["data-reporting", "scripting-automation"]
+  url: "https://www.alteryx.com/"
+
+
+- name: Azure
+  logo: /images/sections/skills/azure.png
+  summary: "Azure Cloud Computing"
+  categories: ["cloud-infrastructure"]
+  url: "https://azure.microsoft.com/en-us/"
+
+- name: Git
+  logo: /images/sections/skills/git.png
+  summary: "Mange code repositories"
+  categories: ["development-version-control"]
+  url: "https://git-scm.com/"
 
 - name: Docker
   logo: /images/sections/skills/docker.svg
   summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["container"]
+  categories: ["development-version-control"]
   url: "https://www.docker.com/"
-
-- name: Prometheus
-  logo: /images/sections/skills/prometheus.png
-  summary: "Capable of setup, configure Prometheus metrics. Experienced with PromQL, AlertManager. Also, experienced with writing metric exporters."
-  categories: ["basic"]
-  url: "https://prometheus.io/"
 
 - name: Linux
   logo: /images/sections/skills/linux.png
   summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["others"]
+  categories: ["os-devops"]
 
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Experienced with git-based development. Mostly, use Github. Also, have experience in working with GitLab."
-  categories: ["basic"]
-  url: "https://git-scm.com/"
 
-- name: C++
-  logo: /images/sections/skills/c++.png
-  summary: "Know basic C/C++ programming. Used for contest programming and problem solving."
-  categories: ["basic", "language"]
