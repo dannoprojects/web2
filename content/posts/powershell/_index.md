@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: PowerShell
     identifier: powershell
-    weight: 200
+    weight: 400
 ---

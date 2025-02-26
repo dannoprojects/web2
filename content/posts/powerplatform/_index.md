@@ -4,5 +4,5 @@ menu:
   sidebar:
     name: Power Platform
     identifier: powerplatform
-    weight: 200
+    weight: 300
 ---
