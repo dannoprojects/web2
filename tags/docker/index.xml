@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Docker on Danno Projects</title><link>https://www.dannoprojects.com/tags/docker/</link><description>Recent content in Docker on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 20 Feb 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/tags/docker/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting Up Docker and Jenkins on Raspberry Pi</title><link>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</link><pubDate>Thu, 20 Feb 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</guid><description>&lt;h1 id="raspberry-pi-docker-and-jenkins-setup">Raspberry Pi Docker and Jenkins Setup&lt;/h1>
-&lt;p>This guide provides step-by-step directions to set up your Raspberry Pi to run Docker and Jenkins with the following configuration:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Install and Configure Docker on the Raspberry Pi&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Configure Jenkins to Run in a Docker Container&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Schedule a daily build&lt;/strong> to run a Python script from the repository every day at 8:00 AM&lt;/li>
-&lt;li>&lt;strong>Enable Docker-in-Docker&lt;/strong> (allow Jenkins to run Docker commands)&lt;/li>
-&lt;li>&lt;strong>Set the local timezone&lt;/strong> to Pacific Standard Time (Los Angeles)&lt;/li>
-&lt;li>&lt;strong>Adjust host permissions&lt;/strong> on the Raspberry Pi as needed&lt;/li>
-&lt;li>&lt;strong>Set up the Jenkins pipeline&lt;/strong> to prune previous Docker images&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h2 id="1-install-and-configure-docker-on-the-raspberry-pi">1. Install and Configure Docker on the Raspberry Pi&lt;/h2>
+&lt;p>Step-by-step guide to set up a Raspberry Pi to run Docker and Jenkins.&lt;/p>
+&lt;h2 id="1-install-and-configure-docker">1. Install and Configure Docker&lt;/h2>
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=DockerPi_install">&lt;/script>
-&lt;h2 id="2-configure-jenkins-to-run-in-a-docker-container">2. Configure Jenkins to Run in a Docker Container&lt;/h2>
+&lt;h2 id="2-configure-jenkins-to-run-in-a-docker-image">2. Configure Jenkins to Run in a Docker image&lt;/h2>
 &lt;p>Create a file named &amp;ldquo;Dockerfile.jenkins with the following content and change the group ID to the Docker group
+&lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=jenkins_setup">&lt;/script>
+&lt;/p>
+&lt;p>Add the following to the Jenkins file
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=JenkinsDockerFile">&lt;/script>
-&lt;/p></description></item></channel></rss>
+&lt;/p>
+&lt;h2 id="3-build-and-run-the-docker-image">3. Build and run the Docker image&lt;/h2>
+&lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=BuildRunCustomImage">&lt;/script></description></item></channel></rss>
