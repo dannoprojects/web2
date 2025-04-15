@@ -36,7 +36,7 @@ Printers are needy, dramatic, and love to run out of toner at the worst possible
 
 Monitors multiple printers for:
 
-- Toner levels (Black, Cyan, Magenta, Yellow—yes, even that one you never have in stock)
+- Toner levels (Black, Cyan, Magenta, Yellow)
 - Waste toner status (because that’s a thing, apparently)
 - Approximate pages remaining (for the truly paranoid)
 - Sends email notifications when supplies are low, so you can ignore them at your leisure
@@ -46,13 +46,13 @@ Monitors multiple printers for:
 
 ## The Problem: Printers Are the Worst
 
-Let's be honest—printers were invented by someone who truly hates IT professionals. They break constantly, lie about their status, and always run out of toner during the most critical print job of the year. We have three different HP models, each with its own special way of reporting toner levels, because why would there be any standardization.
+Printers were invented by someone who truly hates IT professionals. They break constantly, online/offline at a whim, and always run out of toner during the most critical print job of the year. We have three different HP models, each with its own special way of reporting toner levels, because why standardize?
 
 ---
 
 ## The Solution: Python to the Rescue
 
-I cobbled together this using Python, Selenium, and some grit.  It did take some trial and error to get the web pages to parse though.
+I put together this using Python, Selenium, and some grit.  It did take some trial and error to get the web pages to parse though.
 
 ```python
 # The imports alone should tell you how much pain went into this
@@ -88,7 +88,9 @@ for printer in config["printers"]:
 
 You’ll need Python 3.8+, a few pip installs, and a willingness to admit that YAML is better than Excel for this sort of thing.
 
-Configure your `.env` file with your Google API credentials and log file path. Then, set up your printers in `printers.yaml` like so:
+Configure your `.env` file with your Google API credentials and log file path. Here .gitignore is your friend.  
+
+Then, set up your printers in `printers.yaml` like so:
 
 ```yaml
 # printers.yaml
