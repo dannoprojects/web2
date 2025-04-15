@@ -46,13 +46,13 @@ Monitors multiple printers for:
 
 ## The Problem: Printers Are the Worst
 
-Let's be honest—printers were invented by someone who truly hates IT professionals. They break constantly, lie about their status, and always run out of toner during the most critical print job of the year. We have three different HP models, each with its own special way of reporting toner levels, because why would there be any standardization in printer hell?
+Let's be honest—printers were invented by someone who truly hates IT professionals. They break constantly, lie about their status, and always run out of toner during the most critical print job of the year. We have three different HP models, each with its own special way of reporting toner levels, because why would there be any standardization.
 
 ---
 
 ## The Solution: Python to the Rescue
 
-I cobbled together this little beauty using Python, Selenium, and a distinct lack of sleep:
+I cobbled together this using Python, Selenium, and some grit.  It did take some trial and error to get the web pages to parse though.
 
 ```python
 # The imports alone should tell you how much pain went into this
@@ -63,7 +63,7 @@ from selenium.webdriver.chrome.options import Options
 # ...plus about 20 more imports because PRINTERS
 ```
 
-The script does several magical things:
+The script does several things:
 1. Connects to each printer's embedded web server
 2. Scrapes the toner levels using either direct HTTP requests or Selenium for the particularly stubborn ones
 3. Logs everything (because documentation or it didn't happen)
@@ -145,7 +145,7 @@ Order 26X (CF226X)
 MFP Black Cartridge (CE400X): 8%
 ```
 
-I can order supplies *before* Karen's PowerPoint presentation to the board crashes and burns due to a "Magenta low" error. I'm not saying I deserve a raise for this, but...actually, yes I am saying exactly that.
+
 
 ---
 
@@ -160,7 +160,7 @@ I can order supplies *before* Karen's PowerPoint presentation to the board crash
 
 ## The Code
 
-If you too want to avoid the "surprise toner emergency," check out the [complete code](https://github.com/not-a-real-link/PrinterMonitor).
+If you too want to avoid the "surprise toner emergency," check out the [complete code](https://github.com/dannoprojects/PrinterMonitor).
 
 Because remember:
 > The best sysadmin is the one who automates themselves out of the most tedious tasks.
