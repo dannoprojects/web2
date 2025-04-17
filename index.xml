@@ -1,4 +1,8 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Danno Projects</title><link>https://www.dannoprojects.com/</link><description>Recent content on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 07 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Replacing Excel with a SharePoint List for Inventory Management</title><link>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</link><pubDate>Mon, 07 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Danno Projects</title><link>https://www.dannoprojects.com/</link><description>Recent content on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/index.xml" rel="self" type="application/rss+xml"/><item><title>Printer Monitor: Because Printers Are Out to Get Us</title><link>https://www.dannoprojects.com/posts/devops/python/printer_monitor/</link><pubDate>Mon, 14 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/printer_monitor/</guid><description>&lt;h1 id="printer-monitor-because-printers-are-out-to-get-us">Printer Monitor: Because Printers Are Out to Get Us&lt;/h1>
+&lt;p>No one wants to be the printer whisperer—especially for low-cost, unmanaged printers. After one too many toner emergencies (always at 4:59 PM on a Friday), I decided to automate the pain away. If you’re tired of being the “toner psychic,” this Python script is for you.&lt;/p>
+&lt;hr>
+&lt;h2 id="why">Why?&lt;/h2>
+&lt;p>Printers are needy, dramatic, and love to run out of toner at the worst possible moment. This project checks their status, logs the drama, and even emails you when it’s time to order more supplies. No more “surprise, you’re out of magenta!” moments.&lt;/p></description></item><item><title>Replacing Excel with a SharePoint List for Inventory Management</title><link>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</link><pubDate>Mon, 07 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
 &lt;p>Managing a small inventory in Excel can be convenient at first—but as the inventory grows, &lt;strong>Excel&lt;/strong> often becomes more of a bottleneck than a solution. I recently decided to shift from an Excel-based approach to a &lt;strong>SharePoint List&lt;/strong> for better flexibility, multi-user access, and integration potential with APIs (like Dell’s warranty service).&lt;/p>
 &lt;p>In this post, I’ll walk you through:&lt;/p>
 &lt;ol>
@@ -14,11 +18,9 @@
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=DockerPi_install">&lt;/script>
 &lt;h2 id="configure-jenkins-to-run-in-a-docker-image">Configure Jenkins to Run in a Docker image&lt;/h2>
 &lt;p>Create a file named &amp;ldquo;Dockerfile.jenkins with the following content and change the group ID to the Docker group
-&lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=jenkins_setup">&lt;/script>
-&lt;/p>
+&lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=jenkins_setup">&lt;/script>&lt;/p>
 &lt;p>Add the following to the Jenkins file
-&lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=JenkinsDockerFile">&lt;/script>
-&lt;/p>
+&lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=JenkinsDockerFile">&lt;/script>&lt;/p>
 &lt;h2 id="build-and-run-the-docker-image">Build and run the Docker image&lt;/h2>
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=BuildRunCustomImage">&lt;/script></description></item><item><title>New-TimeSpan</title><link>https://www.dannoprojects.com/posts/powershell/newtimespan/</link><pubDate>Thu, 24 Mar 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powershell/newtimespan/</guid><description>&lt;p>I was investigating an issue with our identity provider and out of date passwords the other day. I needed to do a date comparison to find accounts with expired passwords. In the past I’d used (Get-Date).AddDays() and done an evaluation. It works, but to me the code is hard to read.&lt;/p>
 &lt;p>I stumbled on the New-Timespan cmdlet which creates a timespan object. Creating a timespan object and referencing the days property is so much easier to read when you look at the code.&lt;/p></description></item><item><title>Delegation</title><link>https://www.dannoprojects.com/posts/powerplatform/delegation/</link><pubDate>Sun, 13 Mar 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/delegation/</guid><description>&lt;p>I’ve been working on a canvas app to track and manage major IT projects. The app uses a SharePoint list as a datasource. Our executives also use the app and the PowerBI dashboard to review projects that require executive approval in the form of what we call our Change Advisory Board (CAB).&lt;/p>
@@ -64,7 +66,7 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;p>Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obyashi approximately $5000 per year even if no messages are ever sent. That&amp;rsquo;s five thousand to reserve the right to use the platform.&lt;/p>
 &lt;p>I was asked to take a look at different platforms to reduce cost.&lt;/p>
 &lt;h4 id="solution">Solution&lt;/h4>
-&lt;p>I built a PowerApp that uses a Twilio connector. We pay for the messages that we use at a rate of 0.0075 per message and $1.00 per month to reserve a local number. This solution saved Obayashi about $4990 in cost.&lt;/p></description></item><item><title>Go বেসিক</title><link>https://www.dannoprojects.com/notes/go/basic/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/_index.bn/</guid><description/></item><item><title>Introduction</title><link>https://www.dannoprojects.com/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program -->
+&lt;p>I built a PowerApp that uses a Twilio connector. We pay for the messages that we use at a rate of 0.0075 per message and $1.00 per month to reserve a local number. This solution saved Obayashi about $4990 in cost.&lt;/p></description></item><item><title>Go পরিচিতি</title><link>https://www.dannoprojects.com/notes/go/basic/introduction/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/introduction/</guid><description>&lt;!-- A Sample Program -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Hello World&lt;/span>&lt;/h5>
@@ -96,10 +98,7 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;div class="card-body">&lt;p>&lt;strong>Normal Declaration:&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#a6e22e">msg&lt;/span> &lt;span style="color:#66d9ef">string&lt;/span>
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">msg&lt;/span> = &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
-&lt;/div>
-&lt;div class="card">
-&lt;div class="card-body">&lt;p>&lt;strong>Shortcut:&lt;/strong>&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>Shortcut:&lt;/strong>&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">msg&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> &lt;span style="color:#e6db74">&amp;#34;Hello&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
 &lt;/div>
@@ -114,7 +113,7 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>Basic Types</title><link>https://www.dannoprojects.com/notes/go/basic/types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/types/</guid><description>&lt;!-- String Type -->
+&lt;/div></description></item><item><title>বেসিক টাইপ সমূহ</title><link>https://www.dannoprojects.com/notes/go/basic/types/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/types/</guid><description>&lt;!-- String Type -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Strings&lt;/span>&lt;/h5>
@@ -168,7 +167,7 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> &lt;span style="color:#f92672">&amp;amp;&lt;/span>&lt;span style="color:#a6e22e">a&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-go" data-lang="go">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#a6e22e">a&lt;/span> &lt;span style="color:#f92672">:=&lt;/span> new(&lt;span style="color:#66d9ef">int&lt;/span>)
 &lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#f92672">*&lt;/span>&lt;span style="color:#a6e22e">a&lt;/span> = &lt;span style="color:#ae81ff">234&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pointers point to a memory location of a variable. Go is fully garbage-collected.&lt;/p></description></item><item><title>অ্যাডভান্সড</title><link>https://www.dannoprojects.com/notes/go/advanced/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/advanced/_index.bn/</guid><description/></item><item><title>Flow Control</title><link>https://www.dannoprojects.com/notes/go/basic/flow-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/flow-control/</guid><description>&lt;!-- Condition -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Pointers point to a memory location of a variable. Go is fully garbage-collected.&lt;/p></description></item><item><title>Flow Control</title><link>https://www.dannoprojects.com/notes/go/basic/flow-control/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/basic/flow-control/</guid><description>&lt;!-- Condition -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
@@ -225,7 +224,7 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>File Manipulation</title><link>https://www.dannoprojects.com/notes/go/advanced/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/advanced/files/</guid><description>&lt;!-- Condition -->
+&lt;/div></description></item><item><title>ফাইল ম্যানিপুলেশন</title><link>https://www.dannoprojects.com/notes/go/advanced/files/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/advanced/files/</guid><description>&lt;!-- Condition -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Condition&lt;/span>&lt;/h5>
@@ -242,7 +241,7 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>Bash Variables</title><link>https://www.dannoprojects.com/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/bash/basic/</guid><description>&lt;!-- Variable -->
+&lt;/div></description></item><item><title>ব্যাশ ভেরিয়েবল</title><link>https://www.dannoprojects.com/notes/bash/basic/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/bash/basic/</guid><description>&lt;!-- Variable -->
 &lt;div class="note-card ">
 &lt;div class="item">
 &lt;h5 class="note-title">&lt;span>Variable&lt;/span>&lt;/h5>
@@ -268,4 +267,4 @@ In my spare time, I’ve been working on a few Raspberry Pi projects to automate
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;/div>
 &lt;/div>
 &lt;/div>
-&lt;/div></description></item><item><title>Go এর নোট সমূহ</title><link>https://www.dannoprojects.com/notes/go/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/go/_index.bn/</guid><description>&lt;h1 id="go-notes">Go Notes&lt;/h1></description></item><item><title>নোট সমূহ</title><link>https://www.dannoprojects.com/notes/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/_index.bn/</guid><description/></item><item><title>ব্যাশের নোট সমূহ</title><link>https://www.dannoprojects.com/notes/bash/_index.bn/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://www.dannoprojects.com/notes/bash/_index.bn/</guid><description>&lt;h1 id="bash-notes">Bash Notes&lt;/h1></description></item></channel></rss>
+&lt;/div></description></item></channel></rss>
