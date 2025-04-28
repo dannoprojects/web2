@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DevOps on Danno Projects</title><link>https://www.dannoprojects.com/tags/devops/</link><description>Recent content in DevOps on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 20 Feb 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/tags/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>Setting Up Docker and Jenkins on Raspberry Pi</title><link>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</link><pubDate>Thu, 20 Feb 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</guid><description>&lt;p>Step-by-step guide to set up a Raspberry Pi to run Docker and Jenkins.&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>DevOps on Danno Projects</title><link>https://www.dannoprojects.com/tags/devops/</link><description>Recent content in DevOps on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/tags/devops/index.xml" rel="self" type="application/rss+xml"/><item><title>WiFi Monitor System</title><link>https://www.dannoprojects.com/posts/devops/docker/wifimonitor/</link><pubDate>Sun, 20 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/wifimonitor/</guid><description>&lt;h1 id="wifi-monitor-system">WiFi Monitor System&lt;/h1>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The WiFi Monitor System is an automated solution designed to monitor and maintain reliable WiFi connectivity in office environments, particularly for guest WiFi networks that may be unreliable. This system continuously checks WiFi connectivity and automatically power cycles the WiFi equipment when issues are detected, minimizing downtime and manual intervention.&lt;/p>
+&lt;h2 id="problem-statement">Problem Statement&lt;/h2>
+&lt;p>Many offices experience issues with their guest WiFi networks:&lt;/p>
+&lt;ul>
+&lt;li>Intermittent connectivity problems&lt;/li>
+&lt;li>Need for frequent manual router/access point reboots&lt;/li>
+&lt;li>Disruption to guests and staff requiring WiFi access&lt;/li>
+&lt;li>IT staff time wasted on repetitive troubleshooting tasks&lt;/li>
+&lt;/ul>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>This automated monitoring system:&lt;/p></description></item><item><title>Setting Up Docker and Jenkins on Raspberry Pi</title><link>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</link><pubDate>Thu, 20 Feb 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</guid><description>&lt;p>Step-by-step guide to set up a Raspberry Pi to run Docker and Jenkins.&lt;/p>
 &lt;h2 id="install-and-configure-docker">Install and Configure Docker&lt;/h2>
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=DockerPi_install">&lt;/script>
 &lt;h2 id="configure-jenkins-to-run-in-a-docker-image">Configure Jenkins to Run in a Docker image&lt;/h2>

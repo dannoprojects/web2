@@ -1,4 +1,16 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Danno Projects</title><link>https://www.dannoprojects.com/posts/</link><description>Recent content in Posts on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Printer Monitor: Because Printers Are Out to Get Us</title><link>https://www.dannoprojects.com/posts/devops/python/printer_monitor/</link><pubDate>Mon, 14 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/printer_monitor/</guid><description>&lt;h1 id="printer-monitor-because-printers-are-out-to-get-us">Printer Monitor: Because Printers Are Out to Get Us&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Danno Projects</title><link>https://www.dannoprojects.com/posts/</link><description>Recent content in Posts on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 20 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>WiFi Monitor System</title><link>https://www.dannoprojects.com/posts/devops/docker/wifimonitor/</link><pubDate>Sun, 20 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/wifimonitor/</guid><description>&lt;h1 id="wifi-monitor-system">WiFi Monitor System&lt;/h1>
+&lt;h2 id="overview">Overview&lt;/h2>
+&lt;p>The WiFi Monitor System is an automated solution designed to monitor and maintain reliable WiFi connectivity in office environments, particularly for guest WiFi networks that may be unreliable. This system continuously checks WiFi connectivity and automatically power cycles the WiFi equipment when issues are detected, minimizing downtime and manual intervention.&lt;/p>
+&lt;h2 id="problem-statement">Problem Statement&lt;/h2>
+&lt;p>Many offices experience issues with their guest WiFi networks:&lt;/p>
+&lt;ul>
+&lt;li>Intermittent connectivity problems&lt;/li>
+&lt;li>Need for frequent manual router/access point reboots&lt;/li>
+&lt;li>Disruption to guests and staff requiring WiFi access&lt;/li>
+&lt;li>IT staff time wasted on repetitive troubleshooting tasks&lt;/li>
+&lt;/ul>
+&lt;h2 id="solution">Solution&lt;/h2>
+&lt;p>This automated monitoring system:&lt;/p></description></item><item><title>Printer Monitor: Because Printers Are Out to Get Us</title><link>https://www.dannoprojects.com/posts/devops/python/printer_monitor/</link><pubDate>Mon, 14 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/printer_monitor/</guid><description>&lt;h1 id="printer-monitor-because-printers-are-out-to-get-us">Printer Monitor: Because Printers Are Out to Get Us&lt;/h1>
 &lt;p>No one wants to be the printer whisperer—especially for low-cost, unmanaged printers. After one too many toner emergencies (always at 4:59 PM on a Friday), I decided to automate the pain away. If you’re tired of being the “toner psychic,” this Python script is for you.&lt;/p>
 &lt;hr>
 &lt;h2 id="why">Why?&lt;/h2>
