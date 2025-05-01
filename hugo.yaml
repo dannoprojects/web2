@@ -27,7 +27,7 @@ languages:
     weight: 1
 # default language for the content
 defaultContentLanguage: en
-disableLanguages: bn
+disableLanguages: ["bn"]
 
 # Allow raw html in markdown file
 markup:
