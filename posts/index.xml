@@ -25,7 +25,12 @@
 &lt;/ol>
 &lt;hr>
 &lt;h2 id="1-why-move-away-from-excel">1. Why Move Away from Excel?&lt;/h2>
-&lt;p>Excel is great for quick data entry, but it shows its limitations when:&lt;/p></description></item><item><title>Setting Up Docker and Jenkins on Raspberry Pi</title><link>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</link><pubDate>Thu, 20 Feb 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</guid><description>&lt;p>Step-by-step guide to set up a Raspberry Pi to run Docker and Jenkins.&lt;/p>
+&lt;p>Excel is great for quick data entry, but it shows its limitations when:&lt;/p></description></item><item><title>Repairing my Sena 20S Evo: Battery Replacement &amp; Right to Repair</title><link>https://www.dannoprojects.com/posts/projects/sena-20s-evo-battery-replacement/</link><pubDate>Wed, 12 Mar 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/projects/sena-20s-evo-battery-replacement/</guid><description>&lt;h2 id="repairing-my-sena-20s-evo-battery-replacement--right-to-repair">Repairing my Sena 20S Evo: Battery Replacement &amp;amp; Right to Repair&lt;/h2>
+&lt;p>When my Sena 20S Evo finally refused to power on, I realized I had to replace its battery. Sena didn&amp;rsquo;t make the job easy. 5 small screws, a knob, and a gluded in battery made it a challenge.&lt;/p>
+&lt;p>I ordered a replacement battery from Amazon:&lt;/p>
+&lt;p>&lt;a href="https://www.amazon.com/802540-Motorcycles-Bluetooth-Replacement-Intercom/dp/B08TBYRSNQ/" target="_blank" rel="noopener">802540-Motorcycles Bluetooth Replacement Intercom Battery&lt;/a>&lt;/p>
+&lt;p>This video really helped me out:&lt;/p>
+&lt;p>&lt;a href="https://www.youtube.com/watch?v=x311Sux8Ppo" target="_blank" rel="noopener">How to Replace Sena 20S Evo Battery&lt;/a>&lt;/p></description></item><item><title>Setting Up Docker and Jenkins on Raspberry Pi</title><link>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</link><pubDate>Thu, 20 Feb 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/docker/dockerpi/</guid><description>&lt;p>Step-by-step guide to set up a Raspberry Pi to run Docker and Jenkins.&lt;/p>
 &lt;h2 id="install-and-configure-docker">Install and Configure Docker&lt;/h2>
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=DockerPi_install">&lt;/script>
 &lt;h2 id="configure-jenkins-to-run-in-a-docker-image">Configure Jenkins to Run in a Docker image&lt;/h2>
