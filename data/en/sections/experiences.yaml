@@ -20,14 +20,17 @@ experiences:
   - designation: Systems Engineer
     start: December 2024
     responsibilities:
-    - Managed and optimized critical systems to ensure high availability, performance, and security.
-    - Developed and implemented automation solutions to streamline operations and reduce manual effort.
-    - Designed and maintained efficient workflows that enhanced system reliability and operational efficiency.
-    - Integrated automation into key business processes, ensuring seamless interaction between platforms and tools.
-    - Provided system administration support, managing cloud infrastructure, access controls, and security compliance.
-    - Implemented scalable solutions to support business growth and operational needs.
-    - Monitored system health and performance, proactively identifying and resolving potential issues.
-    - Collaborated with cross-functional teams to improve system architecture and technology adoption.
+    responsibilities:
+    - Automated account provisioning, inventory updates, and system tasks using PowerShell and Python.
+    - Supported Microsoft 365, Azure AD, and Google Workspace including MFA, identity federation, and user lifecycle management.
+    - Led migrations from file shares to SharePoint Online, improving data accessibility and compliance.
+    - Maintained hybrid cloud/on-prem infrastructure with regular patching, firmware upgrades, and performance tuning.
+    - Streamlined onboarding and offboarding workflows for employees and contractors.
+    - Set up Azure DevOps infrastructure for internal project and task management.
+    - Managed email security including DKIM setup and domain record configuration.
+    - Oversaw equipment purchasing and vendor coordination for hardware, software, and support contracts.
+    - Contributed to Microsoft 365 tenant migration planning and Azure identity synchronization.
+    - Completed Oracle Cloud Support Specialist certification.
 
 - company:
     name: City of Pacifica
