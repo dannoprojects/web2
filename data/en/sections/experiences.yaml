@@ -20,17 +20,19 @@ experiences:
   - designation: Systems Engineer
     start: December 2024
     responsibilities:
-    responsibilities:
-    - Automated account provisioning, inventory updates, and system tasks using PowerShell and Python.
-    - Supported Microsoft 365, Azure AD, and Google Workspace including MFA, identity federation, and user lifecycle management.
-    - Led migrations from file shares to SharePoint Online, improving data accessibility and compliance.
-    - Maintained hybrid cloud/on-prem infrastructure with regular patching, firmware upgrades, and performance tuning.
-    - Streamlined onboarding and offboarding workflows for employees and contractors.
-    - Set up Azure DevOps infrastructure for internal project and task management.
-    - Managed email security including DKIM setup and domain record configuration.
-    - Oversaw equipment purchasing and vendor coordination for hardware, software, and support contracts.
-    - Contributed to Microsoft 365 tenant migration planning and Azure identity synchronization.
-    - Completed Oracle Cloud Support Specialist certification.
+    - Created and automated an AWS tagging for resources. Set up Lambda/EventBridge jobs to keep tags in sync, aiming for a 30% savings on EC2/EBS.
+    - Moved Always-On workloads to Reserved Instances and set up a Savings Plan for dev servers—cutting cloud costs without losing flexibility.
+    - Wrote snapshot cleanup scripts and added retention tags to clear out years of old EBS backups.
+    - Automated account provisioning, inventory updates, and routine system tasks with PowerShell & Python—cutting manual effort and errors.
+    - Streamlined onboarding and offboarding for employees and contractors.
+    - Supported Microsoft 365, Azure AD, and Google Workspace (MFA, identity federation, user lifecycle).
+    - Led the migration from file shares to SharePoint Online, making data easier to find and more secure.
+    - Set up Azure DevOps pipelines and boards for internal projects.
+    - Kept hybrid cloud/on-prem systems patched, upgraded, and running smoothly.
+    - Hardened email and DNS (DKIM, SPF, DMARC) and managed domain records.
+    - Handled hardware/software purchasing and worked with vendors.
+    - Helped plan Microsoft 365 tenant consolidation and Azure identity sync.
+    - Earned Oracle Cloud Support Specialist certification
 
 - company:
     name: City of Pacifica
