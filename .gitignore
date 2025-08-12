@@ -1,3 +1,17 @@
 resources/*
 node_modules/*
 public/*
+node_modules
+
+# Hugo troubleshooting artifacts - these should not be committed
+assets/cytoscape/
+assets/node_modules/
+assets/scripts/
+static/images/site/
+
+# Hugo development scripts
+start-hugo.ps1
+start-hugo-fixed.ps1
+
+# Hugo cache and temporary files
+.hugo_build.lock
