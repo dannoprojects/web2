@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SharePoint on Danno Projects</title><link>https://www.dannoprojects.com/tags/sharepoint/</link><description>Recent content in SharePoint on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 07 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/tags/sharepoint/index.xml" rel="self" type="application/rss+xml"/><item><title>Replacing Excel with a SharePoint List for Inventory Management</title><link>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</link><pubDate>Mon, 07 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
-&lt;p>Managing a small inventory in Excel can be convenient at first—but as the inventory grows, &lt;strong>Excel&lt;/strong> often becomes more of a bottleneck than a solution. I recently decided to shift from an Excel-based approach to a &lt;strong>SharePoint List&lt;/strong> for better flexibility, multi-user access, and integration potential with APIs (like Dell’s warranty service).&lt;/p>
-&lt;p>In this post, I’ll walk you through:&lt;/p>
-&lt;ol>
-&lt;li>&lt;strong>Why I moved from Excel to SharePoint&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>How I set up the SharePoint List&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Automating warranty checks with the Dell API&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>Lessons learned and future ideas&lt;/strong>&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h2 id="1-why-move-away-from-excel">1. Why Move Away from Excel?&lt;/h2>
-&lt;p>Excel is great for quick data entry, but it shows its limitations when:&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>SharePoint on Danno Projects</title><link>https://www.dannoprojects.com/tags/sharepoint/</link><description>Recent content in SharePoint on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Mon, 07 Apr 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/tags/sharepoint/index.xml" rel="self" type="application/rss+xml"/><item><title>Replacing Excel with a SharePoint List for Inventory Management</title><link>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</link><pubDate>Mon, 07 Apr 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/devops/python/inventory_mgmt/</guid><description>&lt;h2 id="introduction"&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;Managing a small inventory in Excel can be convenient at first—but as the inventory grows, &lt;strong&gt;Excel&lt;/strong&gt; often becomes more of a bottleneck than a solution. I recently decided to shift from an Excel-based approach to a &lt;strong&gt;SharePoint List&lt;/strong&gt; for better flexibility, multi-user access, and integration potential with APIs (like Dell’s warranty service).&lt;/p&gt;
+&lt;p&gt;In this post, I’ll walk you through:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Why I moved from Excel to SharePoint&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How I set up the SharePoint List&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automating warranty checks with the Dell API&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Lessons learned and future ideas&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h2 id="1-why-move-away-from-excel"&gt;1. Why Move Away from Excel?&lt;/h2&gt;
+&lt;p&gt;Excel is great for quick data entry, but it shows its limitations when:&lt;/p&gt;</description></item></channel></rss>
