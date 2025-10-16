@@ -20,19 +20,24 @@ experiences:
   - designation: Systems Engineer
     start: December 2024
     responsibilities:
-    - Created and automated an AWS tagging for resources. Set up Lambda/EventBridge jobs to keep tags in sync, aiming for a 30% savings on EC2/EBS.
-    - Moved Always-On workloads to Reserved Instances and set up a Savings Plan for dev servers—cutting cloud costs without losing flexibility.
-    - Wrote snapshot cleanup scripts and added retention tags to clear out years of old EBS backups.
-    - Automated account provisioning, inventory updates, and routine system tasks with PowerShell & Python—cutting manual effort and errors.
-    - Streamlined onboarding and offboarding for employees and contractors.
-    - Supported Microsoft 365, Azure AD, and Google Workspace (MFA, identity federation, user lifecycle).
-    - Led the migration from file shares to SharePoint Online, making data easier to find and more secure.
-    - Set up Azure DevOps pipelines and boards for internal projects.
-    - Kept hybrid cloud/on-prem systems patched, upgraded, and running smoothly.
-    - Hardened email and DNS (DKIM, SPF, DMARC) and managed domain records.
-    - Handled hardware/software purchasing and worked with vendors.
-    - Helped plan Microsoft 365 tenant consolidation and Azure identity sync.
-    - Earned Oracle Cloud Support Specialist certification
+    - Migrated Always-On workloads to Reserved Instances and implemented Savings Plans for dev servers, reducing spend while maintaining flexibility.
+    - Developed PowerShell and Python automation for account provisioning, inventory updates, and routine tasks.
+    - Wrote snapshot cleanup scripts and implemented retention policies to reduce long-term storage costs.
+    - Led and executed the full migration from Google Workspace to Microsoft 365, including mail flow, DNS, and SPF/DKIM/DMARC validation.
+    - Planned and executed the migration of on-prem file shares to SharePoint Online—improving collaboration and data security.
+    - Designed and deployed Azure DevOps pipelines and boards to streamline internal development projects.
+    - Supported Microsoft 365, Azure AD, and Google Workspace (MFA, identity federation, and user lifecycle management).
+    - Strengthened tenant security through MFA enforcement, conditional access policies, and risk-based sign-in monitoring.
+    - Led critical incident response and recovery efforts, strengthening infrastructure resilience and implementing improved security controls to prevent future threats.
+    - Transitioned legacy antivirus to ESET XDR with Cloudconsole management, improving endpoint visibility and threat response.
+    - Streamlined onboarding and offboarding workflows, coordinating account access, devices, and licensing for distributed teams.
+    - Collaborated with partners and vendors.
+    - Maintained and improved IT documentation, SharePoint-based inventories, and internal knowledge systems.
+    - Managed hardware/software procurement, device imaging, and shipping logistics for remote employees.
+    - Hardened DNS and email configurations (DKIM, SPF, DMARC) to improve domain trust and deliverability.
+    - Modernized hybrid infrastructure by decommissioning redundant servers and automating environment cleanup.
+    - Developed and led Microsoft Tenant to Tenant migrations, ensuring minimal downtime and data integrity.
+    - Earned Oracle Cloud Support Specialist certification and pursuing additional Microsoft and AWS certifications.
 
 - company:
     name: City of Pacifica
