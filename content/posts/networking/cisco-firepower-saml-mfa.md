@@ -16,11 +16,11 @@ hero: images/site/custom-hero.jpg
 
 ## Overview
 
-Recently, I configured SAML authentication with MFA on our Cisco Firepower 1120 to improve VPN security. This was part of our ongoing effort to standardize identity management across systems and ensure consistent MFA enforcement for all remote access.
+I configured SAML authentication with MFA on our Cisco Firepower 1120 to gain MFA capabilities. No one wants a VPN without MFA these days.
 
 ## Reference Guides
 
-These resources were critical in getting things working:
+These links and videos were helpful in getting things working:
 
 - [Cisco ASA AnyConnect VPN with Microsoft Entra ID (Cisco.com)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215935-configure-asa-anyconnect-vpn-with-micros.html)
 - [Cisco Secure Firewall & Microsoft Entra SAML SSO Setup (Microsoft Learn)](https://learn.microsoft.com/en-us/entra/identity/saas-apps/cisco-secure-firewall-secure-client)
@@ -186,24 +186,9 @@ show user login-history
 clear user identity-source saml cache
 ```
 
-## Security Considerations
+## Conclusion
 
-- **Certificate Management**: Regularly update SAML certificates before expiration
-- **Session Timeouts**: Configure appropriate session timeout values
-- **Audit Logging**: Enable comprehensive logging for authentication events
-- **Backup Configuration**: Maintain local admin accounts for emergency access
-
-## Best Practices
-
-1. **Regular Certificate Rotation**: Update SAML certificates annually
-2. **Test Backup Access**: Ensure local admin accounts remain functional
-3. **Monitor Failed Logins**: Set up alerts for authentication failures
-4. **Document Configuration**: Keep detailed records of SAML settings
-5. **Staged Deployment**: Test in lab environment before production
-
-## Final Thoughts
-
-MFA on VPNs isn't optional anymore — it's a must-have. This project reinforced that while vendor documentation is helpful, real-world implementation often involves nuances not covered in the official guides. The key lessons around certificate management and ASDM profile refreshing could save others significant troubleshooting time.
+MFA on VPNs isn't optional anymore — it's a must-have. I hope this helps anyone setting up SAML and MFA on a Cisco Firepower device. 
 
 ## References
 
@@ -218,8 +203,3 @@ MFA on VPNs isn't optional anymore — it's a must-have. This project reinforced
 - [Cisco Firepower Management Center Configuration Guide](https://www.cisco.com/c/en/us/support/security/firepower-management-center/series.html)
 - [SAML 2.0 Specification](https://docs.oasis-open.org/security/saml/v2.0/)
 - [Cisco Identity Services Engine Integration](https://www.cisco.com/c/en/us/products/security/identity-services-engine/index.html)
-
----
-
-*Last Updated: August 12, 2025*
-*Tested on: Cisco Firepower 1120 running FTD 7.x*
