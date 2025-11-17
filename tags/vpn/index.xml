@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>VPN on Danno Projects</title><link>https://www.dannoprojects.com/tags/vpn/</link><description>Recent content in VPN on Danno Projects</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Tue, 12 Aug 2025 00:00:00 -0800</lastBuildDate><atom:link href="https://www.dannoprojects.com/tags/vpn/index.xml" rel="self" type="application/rss+xml"/><item><title>Configuring SAML and MFA on Cisco Firepower 1120</title><link>https://www.dannoprojects.com/posts/networking/cisco-firepower-saml-mfa/</link><pubDate>Tue, 12 Aug 2025 00:00:00 -0800</pubDate><guid>https://www.dannoprojects.com/posts/networking/cisco-firepower-saml-mfa/</guid><description>&lt;h2 id="overview"&gt;Overview&lt;/h2&gt;
-&lt;p&gt;Recently, I configured SAML authentication with MFA on our Cisco Firepower 1120 to improve VPN security. This was part of our ongoing effort to standardize identity management across systems and ensure consistent MFA enforcement for all remote access.&lt;/p&gt;
-&lt;h2 id="reference-guides"&gt;Reference Guides&lt;/h2&gt;
-&lt;p&gt;These resources were critical in getting things working:&lt;/p&gt;
+&lt;p&gt;Setting up SAML authentication with MFA on a Cisco Firepower 1120 for VPN access is essential for modern security requirements. Microsoft&amp;rsquo;s documentation provides a good starting point, but it&amp;rsquo;s missing critical CLI configuration commands for the Firepower side.&lt;/p&gt;
+&lt;p&gt;This guide fills in those gaps and documents the lessons learned during implementation.&lt;/p&gt;
+&lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href="https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215935-configure-asa-anyconnect-vpn-with-micros.html" target="_blank" rel="noopener"&gt;Cisco ASA AnyConnect VPN with Microsoft Entra ID (Cisco.com)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://learn.microsoft.com/en-us/entra/identity/saas-apps/cisco-secure-firewall-secure-client" target="_blank" rel="noopener"&gt;Cisco Secure Firewall &amp;amp; Microsoft Entra SAML SSO Setup (Microsoft Learn)&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href="https://youtu.be/ORC0_0wsbQk?feature=shared" target="_blank" rel="noopener"&gt;YouTube: SAML with AnyConnect&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Cisco Firepower 1120 with appropriate licensing and AnyConnect&lt;/li&gt;
+&lt;li&gt;Azure AD (Microsoft Entra ID) tenant with administrative access&lt;/li&gt;
+&lt;li&gt;Access to Firepower via ASDM or CLI&lt;/li&gt;
+&lt;li&gt;Your Firepower VPN&amp;rsquo;s public FQDN and SSL certificate configured&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id="lessons-learned"&gt;Lessons Learned&lt;/h2&gt;
-&lt;h3 id="1-redirect-url-changes-mean-a-new-certificate"&gt;1. Redirect URL changes mean a new certificate&lt;/h3&gt;
-&lt;p&gt;I initially downloaded the SAML certificate when setting up the configuration. Later, I found a typo in my redirect URL and corrected it.&lt;/p&gt;</description></item></channel></rss>
+&lt;h2 id="configuration-steps"&gt;Configuration Steps&lt;/h2&gt;
+&lt;h3 id="step-1-create-the-enterprise-application-in-azure"&gt;Step 1: Create the Enterprise Application in Azure&lt;/h3&gt;
+&lt;p&gt;Follow Microsoft&amp;rsquo;s guide to create the Cisco Secure Firewall app in Azure AD:&lt;/p&gt;</description></item></channel></rss>
