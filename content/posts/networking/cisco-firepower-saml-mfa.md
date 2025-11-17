@@ -9,197 +9,188 @@ menu:
     identifier: cisco-firepower-saml-mfa
     parent: networking
     weight: 310
-description: "Lessons learned while setting up SAML authentication and MFA on a Cisco Firepower 1120 for VPN access."
-tags: ["Cisco", "Firepower", "SAML", "MFA", "VPN", "ASDM"]
+description: "Step-by-step guide for setting up Azure AD SAML authentication with MFA for Cisco Firepower VPN access, including the CLI commands missing from Microsoft's documentation."
+tags: ["Cisco", "Firepower", "SAML", "MFA", "VPN", "ASDM", "Azure AD", "Entra ID"]
 hero: images/site/custom-hero.jpg
 ---
 
 ## Overview
 
-I configured SAML authentication with MFA on our Cisco Firepower 1120 to gain MFA capabilities. No one wants a VPN without MFA these days.
+Setting up SAML authentication with MFA on a Cisco Firepower 1120 for VPN access is essential for modern security requirements. Microsoft's documentation provides a good starting point, but it's missing critical CLI configuration commands for the Firepower side.
 
-## Reference Guides
+This guide fills in those gaps and documents the lessons learned during implementation.
 
-These links and videos were helpful in getting things working:
+## Prerequisites
 
-- [Cisco ASA AnyConnect VPN with Microsoft Entra ID (Cisco.com)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215935-configure-asa-anyconnect-vpn-with-micros.html)
-- [Cisco Secure Firewall & Microsoft Entra SAML SSO Setup (Microsoft Learn)](https://learn.microsoft.com/en-us/entra/identity/saas-apps/cisco-secure-firewall-secure-client)
-- [YouTube: SAML with AnyConnect](https://youtu.be/ORC0_0wsbQk?feature=shared)
+- Cisco Firepower 1120 with appropriate licensing and AnyConnect
+- Azure AD (Microsoft Entra ID) tenant with administrative access
+- Access to Firepower via ASDM or CLI
+- Your Firepower VPN's public FQDN and SSL certificate configured
+
+## Configuration Steps
+
+### Step 1: Create the Enterprise Application in Azure
+
+Follow Microsoft's guide to create the Cisco Secure Firewall app in Azure AD:
+
+1. Sign in to the [Azure portal](https://portal.azure.com/)
+2. Navigate to **Microsoft Entra ID** > **Enterprise Applications**
+3. Click **New application** > **Create your own application**
+4. Search for "Cisco Secure Firewall - Secure Client (Clientless VPN)" and add it
+5. Navigate to **Single sign-on** and select **SAML**
+
+### Step 2: Configure SAML Settings in Azure
+
+Configure the basic SAML settings:
+
+```text
+Identifier (Entity ID): https://[your-vpn-fqdn.domain.com]
+Reply URL (ACS): https://[your-vpn-fqdn.domain.com]/saml/acs
+Sign on URL: https://[your-vpn-fqdn.domain.com]
+```
+
+**Important:** These URLs must exactly match your Firepower's base URL configuration.
+
+### Step 3: Download the SAML Certificate
+
+1. In the Azure SAML configuration, scroll to **SAML Signing Certificate**
+2. Download the **Certificate (Base64)**
+3. Open the certificate file in a text editor - you'll need this content for the CLI configuration
+
+### Step 4: Note Your Azure Tenant ID
+
+You'll need your Azure Tenant ID for the Firepower configuration:
+
+1. Navigate to **Microsoft Entra ID** > **Overview**
+2. Copy your **Tenant ID** (it looks like: `12345678-1234-1234-1234-123456789abc`)
+
+### Step 5: Configure Firepower SAML (The Missing Piece)
+
+Here's the commands in one place with tabs and formatting for easy copy-paste. Edit the placeholders as needed.
+
+```bash
+config t
+crypto ca trustpoint [YourTrustpointName]
+  revocation-check none
+  no id-usage
+  enrollment terminal
+  no ca-check
+crypto ca authenticate [YourTrustpointName]
+-----BEGIN CERTIFICATE-----
+[Paste Base64 certificate from Azure here]
+-----END CERTIFICATE-----
+quit
+webvpn
+  saml idp https://sts.windows.net/[AZURE-TENANT-ID]/
+    url sign-in https://login.microsoftonline.com/[AZURE-TENANT-ID]/saml2
+    url sign-out https://login.microsoftonline.com/common/wsfederation?wa=wsignout1.0
+    trustpoint idp [YourTrustpointName]
+    trustpoint sp [YourFirewallSSLCertName]
+    no force re-authentication
+    no signature
+    base-url https://[your-vpn-fqdn.domain.com]
+end
+write mem
+```
+
+**Configuration parameters:**
+- `[YourTrustpointName]` - A descriptive name for the Azure AD certificate (e.g., "AzureAD-SAML")
+- `[AZURE-TENANT-ID]` - Your Azure tenant ID from Step 4
+- `[YourFirewallSSLCertName]` - The existing SSL certificate trustpoint name on your Firepower
+- `[your-vpn-fqdn.domain.com]` - Your VPN's public FQDN (must match Azure configuration)
+
+### Step 6: Configure the Connection Profile in ASDM
+
+1. Open ASDM and navigate to **Remote Access VPN** > **Network (Client) Access** > **AnyConnect Connection Profiles**
+2. Create the connection profile using the endpoints from Azure.
+3. Assign a group policy.
+4. Click **OK** and **Apply**
 
 ## Lessons Learned
 
 ### 1. Redirect URL changes mean a new certificate
 
-I initially downloaded the SAML certificate when setting up the configuration. Later, I found a typo in my redirect URL and corrected it.
+I initially downloaded the SAML certificate when setting up the configuration. Later, I found a typo in my redirect URL and corrected it in Azure.
 
-What I missed was the nuance that **changing the redirect URL requires downloading a new SAML certificate** and importing it into the firewall. Without the updated cert, the SAML handshake failed.
+**Critical lesson:** Changing the redirect URL in Azure requires downloading a new SAML certificate and re-importing it into the Firepower. The certificate is tied to the specific URLs configured in Azure. Without the updated cert, the SAML handshake will fail with cryptic errors.
 
-### 2. CSRF cookie error
+### 2. Applying SAML profile changes in ASDM
 
-At one point I was getting a "CSRF cookie" error (I had even misspelled it in my notes). This turned out to be related to the SAML config not being fully applied after my changes.
-
-### 3. Applying SAML profile changes in ASDM
-
-It's not obvious in the official guides, but if you update the SAML profile, you should disable and re-enable it in ASDM to make sure the change takes effect:
+The official guides don't emphasize this, but if you update the SAML profile, you should disable and re-enable it in ASDM:
 
 1. Open the connection profile in ASDM
 2. Set the SAML server to "None". Save and Apply
 3. Re-select the SAML server. Save and Apply again
 
-### Prerequisites
+This ensures the changes fully take effect on the running configuration.
 
-- Cisco Firepower 1120 with appropriate licensing
-- Access to Firepower Device Manager (FDM) or Firepower Management Center (FMC)
-- Identity Provider (IdP) configured (e.g., Azure AD, Okta, ADFS)
-- Administrative privileges on both the Firepower device and IdP
+### 3. Base URL must be exact
 
-## Configuration Steps
+The `base-url` in your Firepower configuration must exactly match the URLs configured in Azure (Identifier, Reply URL, Sign-on URL). Any mismatch will cause authentication failures.
 
-### Step 1: Prepare the Identity Provider
+## Testing the Configuration
 
-Before configuring the Firepower device, ensure your IdP is properly set up:
-
-```text
-1. Create a new SAML application in your IdP
-2. Configure the following parameters:
-   - Entity ID: https://<firepower-ip>/saml/metadata
-   - ACS URL: https://<firepower-ip>/saml/acs
-   - Name ID format: Email Address or Persistent
-```
-
-### Step 2: Access Firepower Management Interface
-
-Connect to your Firepower 1120 management interface:
-
-```bash
-# Access via web browser
-https://<firepower-management-ip>
-
-# Or via SSH for CLI configuration
-ssh admin@<firepower-management-ip>
-```
-
-### Step 3: Configure SAML Authentication
-
-#### Via Firepower Device Manager (FDM)
-
-1. Navigate to **Device** > **System Settings** > **Users**
-2. Click **Identity Sources**
-3. Select **Add SAML Identity Source**
-
-Configure the following settings:
-
-```text
-Name: [Your IdP Name]
-Entity ID: [IdP Entity ID from Step 1]
-Sign-In URL: [IdP SSO URL]
-Certificate: [Upload IdP signing certificate]
-```
-
-#### Via CLI Configuration
-
-```bash
-configure user identity-source saml
- name [IdP-Name]
- entity-id [IdP-Entity-ID]
- sign-in-url [IdP-SSO-URL]
- certificate [certificate-name]
-exit
-```
-
-### Step 4: Configure Multi-Factor Authentication
-
-Enable MFA policies for SAML users:
-
-```text
-1. Go to Authentication Policies
-2. Create new policy for SAML users
-3. Enable MFA requirement
-4. Configure MFA methods (SMS, TOTP, etc.)
-```
-
-### Step 5: User Group Mapping
-
-Map SAML groups to Firepower roles:
-
-```bash
-configure user identity-source saml group-mapping
- saml-group "Network-Admins" firepower-role "Admin"
- saml-group "Security-Team" firepower-role "Security Analyst"
-exit
-```
-
-### Step 6: Testing Configuration
-
-Test the SAML authentication:
-
-1. Log out of the current session
-2. Access the Firepower login page
-3. Select "SAML Login" option
-4. Verify redirection to IdP
-5. Complete MFA challenge
-6. Confirm successful login to Firepower
+1. Clear your browser cache or use an incognito window
+2. Navigate to your VPN URL: `https://[your-vpn-fqdn.domain.com]`
+3. You should be redirected to the Azure AD login page
+4. After authenticating with Azure AD (and completing MFA), you should be redirected back to the VPN portal
+5. AnyConnect should download and connect automatically
 
 ## Troubleshooting
 
-### Common Issues
-
-#### SAML Certificate Errors
+### SAML Authentication Fails
 
 ```bash
-# Verify certificate installation
-show user identity-source saml certificate
+# Check SAML configuration
+show webvpn saml idp
 
-# Check certificate expiration
+# Verify certificate is installed
 show crypto ca certificates
 ```
 
-#### Authentication Failures
+### Certificate Errors
 
-```bash
-# Check SAML logs
-show logging | include SAML
+If you see certificate validation errors, verify:
+- The certificate was copied correctly (including BEGIN/END lines)
+- No extra spaces or line breaks were introduced
+- The certificate matches the current Azure configuration
 
-# Verify time synchronization
-show clock
-```
+### Redirect Loop or CSRF Errors
 
-#### MFA Not Triggering
-
-- Verify MFA policy is applied to SAML users
-- Check IdP MFA configuration
-- Ensure user is in correct SAML group
+This typically indicates:
+- Mismatch between Azure URLs and Firepower base-url
+- SAML profile not properly applied (see Lesson #2)
+- Certificate doesn't match the current Azure configuration (see Lesson #1)
 
 ### Useful Commands
 
 ```bash
-# Show SAML configuration
-show user identity-source saml
+# Show SAML IDP configuration
+show run webvpn
 
-# Test SAML connectivity
-test user identity-source saml [IdP-name]
+# Test certificate
+show crypto ca certificates [YourTrustpointName]
 
-# Monitor authentication attempts
-show user login-history
+# Check WebVPN sessions
+show vpn-sessiondb anyconnect
 
-# Clear SAML cache
-clear user identity-source saml cache
+# Debug SAML (use with caution)
+debug webvpn saml 255
 ```
 
 ## Conclusion
 
-MFA on VPNs isn't optional anymore — it's a must-have. I hope this helps anyone setting up SAML and MFA on a Cisco Firepower device. 
+The Microsoft documentation provides a good foundation, but the actual CLI configuration for Firepower is the critical missing piece. With SAML and Azure AD MFA properly configured, you have a secure, modern authentication method for your VPN that meets current security standards.
 
 ## References
 
 **Primary Configuration Guides:**
 
+- [Cisco Secure Firewall & Microsoft Entra SAML SSO Setup (Microsoft Learn)](https://learn.microsoft.com/en-us/entra/identity/saas-apps/cisco-secure-firewall-secure-client) - The starting point, but incomplete
 - [Cisco ASA AnyConnect VPN with Microsoft Entra ID (Cisco.com)](https://www.cisco.com/c/en/us/support/docs/security/anyconnect-secure-mobility-client/215935-configure-asa-anyconnect-vpn-with-micros.html)
-- [Cisco Secure Firewall & Microsoft Entra SAML SSO Setup (Microsoft Learn)](https://learn.microsoft.com/en-us/entra/identity/saas-apps/cisco-secure-firewall-secure-client)
 - [YouTube: SAML with AnyConnect](https://youtu.be/ORC0_0wsbQk?feature=shared)
 
 **Additional Resources:**
 
-- [Cisco Firepower Management Center Configuration Guide](https://www.cisco.com/c/en/us/support/security/firepower-management-center/series.html)
-- [SAML 2.0 Specification](https://docs.oasis-open.org/security/saml/v2.0/)
-- [Cisco Identity Services Engine Integration](https://www.cisco.com/c/en/us/products/security/identity-services-engine/index.html)
+- [Cisco ASA CLI Configuration Guide](https://www.cisco.com/c/en/us/support/security/asa-5500-series-next-generation-firewalls/products-installation-and-configuration-guides-list.html)
+- [Microsoft Entra ID Documentation](https://learn.microsoft.com/en-us/entra/identity/)
