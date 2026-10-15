@@ -1,0 +1,7 @@
+{
+  "name": "Hugo Dev Container",
+  "dockerComposeFile": "../compose.yaml",
+  "service": "web",
+  "workspaceFolder": "/src",
+  "shutdownAction": "stopCompose"
+}

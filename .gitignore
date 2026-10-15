@@ -2,6 +2,8 @@ resources/*
 node_modules/*
 public/*
 node_modules
+**/node_modules
+packages/
 
 # Hugo troubleshooting artifacts - these should not be committed
 assets/cytoscape/

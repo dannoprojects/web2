@@ -1,0 +1,18 @@
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dannoprojects-web
+    ports:
+      - "1313:1313"
+    volumes:
+      - .:/src
+      - go-cache:/go/pkg/mod
+    environment:
+      - HUGO_ENV=development
+    command: >
+      sh -c "hugo mod tidy && hugo mod npm pack && npm install && hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 --buildDrafts --buildFuture --watch --poll 700ms"
+
+volumes:
+  go-cache:
