@@ -15,26 +15,35 @@ jobs:
     runs-on: ubuntu-latest
     name: Build and Deploy Job
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
       with:
         submodules: true
         lfs: false
 
-    - name: Install Hugo
-      uses: peaceiris/actions-hugo@v2
+    - name: Setup Go
+      uses: actions/setup-go@v5
       with:
-        hugo-version: '0.131.0'
+        go-version: '1.22'
+
+    - name: Install Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.168.0'
         extended: true
     
-    - name: Install Node.js (for Azure Static Web Apps)
-      uses: actions/setup-node@v2
+    - name: Install Node.js
+      uses: actions/setup-node@v4
       with:
-          node-version: '16'  # Ensure Node.js is installed as Oryx requires i    
-    - name: Install NPM Modules
-      run: npm install
+        node-version: '20'
+
+    - name: Install dependencies
+      run: |
+        hugo mod tidy
+        hugo mod npm pack
+        npm install
 
     - name: Build Hugo site
-      run: hugo
+      run: hugo --gc --minify
 
     - name: Build and Depoly
       id: builddeploy
