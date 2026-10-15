@@ -20,6 +20,10 @@ experiences:
   - designation: Systems Engineer
     start: December 2024
     responsibilities:
+    - Serve as the sole IT & Systems Engineer for North America within a larger global team, managing regional infrastructure, end-user technology, and cloud operations with full ownership.
+    - Managed and modernized AWS cloud environments, provisioning, hardening, and troubleshooting Linux EC2 workloads to maintain high availability and performance.
+    - Engineered and deployed Amazon CloudWatch alarms and proactive alerting pipelines to rapidly detect system degradation, monitor resource utilization, and automate incident response.
+    - Led SSL/TLS certificate lifecycle management, tracking expirations, and executing seamless renewals across enterprise domains and web endpoints to guarantee continuous service continuity.
     - Migrated Always-On workloads to Reserved Instances and implemented Savings Plans for dev servers, reducing spend while maintaining flexibility.
     - Developed PowerShell and Python automation for account provisioning, inventory updates, and routine tasks.
     - Wrote snapshot cleanup scripts and implemented retention policies to reduce long-term storage costs.

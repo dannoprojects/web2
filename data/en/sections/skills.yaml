@@ -71,6 +71,12 @@ skills:
   categories: ["cloud-infrastructure"]
   url: "https://azure.microsoft.com/en-us/"
 
+- name: AWS
+  logo: /images/sections/skills/aws.png
+  summary: "Manage and optimize cloud infrastructure including EC2 Linux instances, CloudWatch alarms and monitoring, IAM, and cost-optimization savings plans."
+  categories: ["cloud-infrastructure", "os-devops"]
+  url: "https://aws.amazon.com/"
+
 - name: Git
   logo: /images/sections/skills/git.png
   summary: "Mange code repositories"
