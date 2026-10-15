@@ -18,9 +18,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install Hugo Extended matching Netlify configuration (v0.133.1)
 RUN dpkg_arch="$(dpkg --print-architecture)" \
     && case "${dpkg_arch}" in \
-        amd64) HUGO_ARCH="linux-amd64" ;; \
-        arm64) HUGO_ARCH="linux-arm64" ;; \
-        *) echo "Unsupported architecture: ${dpkg_arch}" && exit 1 ;; \
+    amd64) HUGO_ARCH="linux-amd64" ;; \
+    arm64) HUGO_ARCH="linux-arm64" ;; \
+    *) echo "Unsupported architecture: ${dpkg_arch}" && exit 1 ;; \
     esac \
     && curl -fsSL "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_${HUGO_ARCH}.tar.gz" -o hugo.tar.gz \
     && tar -xzf hugo.tar.gz -C /usr/local/bin hugo \

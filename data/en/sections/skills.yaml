@@ -79,7 +79,7 @@ skills:
 
 - name: Git
   logo: /images/sections/skills/git.png
-  summary: "Mange code repositories"
+  summary: "Manage code repositories"
   categories: ["development-version-control"]
   url: "https://git-scm.com/"
 

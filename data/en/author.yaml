@@ -8,12 +8,13 @@ image: "images/author/profile.jpg"
 # give your some contact information. they will be used in the footer
 contactInfo:
   email: "dannoprojects 'at' gmail.com"
-  # github: johndoe
-  # linkedin: johndoe
+  github: dannoprojects
+  linkedin: dan-rowe-75a33413
 
 
 # some summary about what you do
 summary:
-- I'm Systems Engineer.
-- I love to build things.
-- I'm a motorcyclist.
+- I'm a Cloud & Systems Engineer.
+- I automate infrastructure & eliminate friction.
+- I build resilient, scalable systems.
+- I ride & teach motorcycle safety.
