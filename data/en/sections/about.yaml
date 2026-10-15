@@ -11,14 +11,14 @@ section:
 designation: Systems Engineer
 # your company information
 company:
-  name: Project Partners
-  url: "https://www.projectp.com"
+  name: Broadpin
+  url: "https://www.broadpin.com"
 
 # your resume. this file path should be relative to you "static" directory
 # resume: "files/resume.pdf"
 # a new comment
 # a summary about you
-summary: "As a Systems Engineer at Project Partners, I specialize in managing and optimizing critical systems while developing automation \
+summary: "As a Systems Engineer at Broadpin, I specialize in managing and optimizing critical systems while developing automation \
  solutions to streamline operations. My expertise lies in designing and implementing efficient workflows that reduce manual effort, enhance system \ 
  reliability, and improve overall productivity. I leverage automation to simplify complex processes, ensuring \ 
  seamless integrations between various platforms and tools. With a strong background in system administration, cloud technologies, and \ 

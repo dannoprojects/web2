@@ -173,7 +173,7 @@ stage('Deploy as Service') {
                 -e MONITOR_INTERVAL=900 \\
                 -e FAILURE_INTERVAL=60 \\
                 -e SMTP_SERVER=10.0.1.4 \\
-                -e EMAIL_TO=drowe@projectp.com \\
+                -e EMAIL_TO=drowe@broadpin.com \\
                 network-monitor:latest daemon
             """
         }
