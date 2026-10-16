@@ -4,10 +4,10 @@
 &lt;h2 id="prerequisites"&gt;Prerequisites&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;Cisco Firepower 1120 with appropriate licensing and AnyConnect&lt;/li&gt;
-&lt;li&gt;Azure AD (Microsoft Entra ID) tenant with administrative access&lt;/li&gt;
+&lt;li&gt;Microsoft Entra ID tenant with administrative access&lt;/li&gt;
 &lt;li&gt;Access to Firepower via ASDM or CLI&lt;/li&gt;
 &lt;li&gt;Your Firepower VPN&amp;rsquo;s public FQDN and SSL certificate configured&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id="configuration-steps"&gt;Configuration Steps&lt;/h2&gt;
 &lt;h3 id="step-1-create-the-enterprise-application-in-azure"&gt;Step 1: Create the Enterprise Application in Azure&lt;/h3&gt;
-&lt;p&gt;Follow Microsoft&amp;rsquo;s guide to create the Cisco Secure Firewall app in Azure AD:&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;Follow Microsoft&amp;rsquo;s guide to create the Cisco Secure Firewall app in Microsoft Entra ID:&lt;/p&gt;</description></item></channel></rss>
