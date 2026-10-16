@@ -24,7 +24,7 @@ hero: images/site/custom-hero.jpg
 
 ## Repairing my Sena 20S Evo: Battery Replacement & Right to Repair
 
-When my Sena 20S Evo finally refused to power on, I realized I had to replace its battery. Sena didn't make the job easy. 5 small screws, a knob, and a gluded in battery made it a challenge.
+When my Sena 20S Evo finally refused to power on, I realized I had to replace its battery. Sena didn't make the job easy. 5 small screws, a knob, and a glued-in battery made it a challenge.
 
 I ordered a replacement battery from Amazon:
 

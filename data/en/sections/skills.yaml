@@ -54,7 +54,7 @@ skills:
 
 - name: Linux & Containerization
   logo: /images/sections/skills/linux.png
-  summary: "Administer production AWS Linux instances and self-hosted Debian/ARM environments (Tailscale/Raspberry Pi); package internal Python and monitoring utilities as multi-architecture Docker containers."
+  summary: "Administer production AWS Linux instances and self-hosted environments (Debian/Ubuntu, ARM/x86 architectures, and WireGuard/Tailscale mesh networking); package internal Python and monitoring utilities as multi-architecture Docker containers."
   categories: ["infra-devops"]
   url: "https://www.docker.com/"
 

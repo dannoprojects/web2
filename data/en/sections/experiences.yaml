@@ -58,10 +58,9 @@ experiences:
     end: October 2023
     responsibilities:
     - "Architected and delivered enterprise automation solutions using Microsoft Power Platform (Power Automate, Power Apps) and Robotic Process Automation (RPA), eliminating manual operational overhead and streamlining multi-agency workflows."
-    - "Developed custom RPA pipelines to ingest and validate financial data into legacy platforms, serving as the benchmark architecture for company-wide reporting and remittance workflows."
-    - "Partnered with enterprise business units to automate manual file and data-processing tasks, reducing annual operational work effort by over 60 hours and eliminating recurring software licensing costs by over $5,000/year."
+    - "Developed custom RPA pipelines and Power Automate cloud flows to ingest and validate financial data into legacy platforms, establishing the enterprise benchmark for automated remittance notifications and company-wide reporting."
+    - "Partnered with enterprise business units to eliminate manual cross-agency data reconciliation, accelerating month-end financial reporting cycles and improving data accuracy across operating units."
     - "Designed and built scalable PowerApps applications and interactive dashboards, empowering distributed business units with self-service tooling and streamlined data governance."
-    - "Designed, developed, and implemented automation to streamline data collection for company-wide reporting and manage remittance notifications through RPA and Power Automate Cloud Flows."
 
 - company:
     name: Obayashi North America
@@ -73,9 +72,9 @@ experiences:
     start: October 2020
     end: April 2022
     responsibilities:
-    - "Evaluate and implement new cloud platforms, infrastructure technologies, and enterprise collaboration systems."
-    - "Collaborate across departments to deliver scalable technology solutions and cloud modernization initiatives."
-    - "Gather requirements, design, build, and deliver automations using PowerShell, Power Platform, and REST APIs."
+    - "Evaluated and implemented new cloud platforms, infrastructure technologies, and enterprise collaboration systems."
+    - "Collaborated across departments to deliver scalable technology solutions and cloud modernization initiatives."
+    - "Gathered requirements, designed, built, and delivered automations using PowerShell, Power Platform, and REST APIs."
     - "Worked with Payroll Department to automate a manual file process, reducing work effort by 60 hours annually."
     - "Developed an SMS notification platform with PowerApps and Twilio, reducing spend on external emergency platforms by $5,000 annually."
     - "Developed PowerApps applications to streamline corporate travel requests and approvals."

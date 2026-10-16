@@ -11,14 +11,14 @@ section:
 degrees:
 - name: Bachelor of Arts (BA), Psychology
   icon: fa-graduation-cap
-  timeframe: 1993-1997
+  timeframe: 
   institution:
     name: Concord University
     url: "http://www.concord.edu"
 
 - name: Computer Science
   icon: fa-school
-  timeframe: 2017-2018
+  timeframe: 
   institution:
     name: City College of San Francisco
     url: "https://www.ccsf.edu/"
