@@ -31,4 +31,4 @@ WORKDIR /src
 
 EXPOSE 1313
 
-CMD ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://localhost:1313", "--buildDrafts", "--buildFuture", "--watch", "--poll", "700ms"]
+CMD ["hugo", "server", "--bind", "0.0.0.0", "--baseURL", "http://localhost:1313", "--buildFuture", "--watch", "--poll", "700ms"]

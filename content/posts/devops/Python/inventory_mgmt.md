@@ -63,7 +63,7 @@ This structure immediately gave me:
 The inventory that I inherited was a mess.  I wanted to progrmatically update it. So I wrote a scrpt to check **warranty type and expiration date** using Dell’s API. Here’s the high-level flow:
 
 1. **Script Authenticates to SharePoint**:  
-   Using **Azure AD** (or an **OAuth** client) to connect to the list programmatically.  
+   Using **Microsoft Entra ID** (or an **OAuth** client) to connect to the list programmatically.  
 2. **Query for “Assigned” Items**:  
    Grab items where `Status == 'Assigned'`.  
 3. **Dell API Call**:  

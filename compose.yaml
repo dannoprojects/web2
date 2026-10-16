@@ -12,7 +12,7 @@ services:
     environment:
       - HUGO_ENV=development
     command: >
-      sh -c "hugo mod tidy && hugo mod npm pack && npm install && hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 --buildDrafts --buildFuture --watch --poll 700ms"
+      sh -c "hugo mod tidy && hugo mod npm pack && npm install && hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 --buildFuture --watch --poll 700ms"
 
 volumes:
   go-cache:

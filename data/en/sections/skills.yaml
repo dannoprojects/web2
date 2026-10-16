@@ -13,85 +13,53 @@ section:
 buttons:
 - name: All
   filter: "all"
-- name: Scripting & Automation
-  filter: "scripting-automation"
-- name: Cloud & Infrastructure
-  filter: "cloud-infrastructure"
-- name: Development & Version Control
-  filter: "development-version-control"
-- name: Data & Reporting
-  filter: "data-reporting"
-- name: Operating Systems & DevOps
-  filter: "os-devops"
+- name: Cloud & Identity
+  filter: "cloud-identity"
+- name: Automation & AI
+  filter: "automation-ai"
+- name: Infrastructure & DevOps
+  filter: "infra-devops"
 
 # Your Skills.
-# Give a summary of you each skill in the summary section.
 skills:
-- name: PowerShell
-  logo: /images/sections/skills/powershell.png
-  summary: "Primary automation and scripting language used to manage systems or build complete modules."
-  categories: ["scripting-automation"]
-  url: "https://docs.microsoft.com/en-us/powershell/"
+- name: Microsoft 365 & Purview Governance
+  logo: /images/sections/skills/cloud.png
+  summary: "Tenant-to-tenant migrations, Exchange Online, SharePoint architecture, Microsoft Purview DLP, sensitivity labels, and compliance governance."
+  categories: ["cloud-identity"]
+  url: "https://learn.microsoft.com/en-us/purview/"
 
-- name: Python
-  # logo: /images/sections/skills/python.png
-  summary: "Versatile programming language used for automation, scripting, data analysis, and backend development."
-  categories: ["scripting-automation", "development-version-control"]
-  url: "https://www.python.org/"
-
-  
-- name: Power Automate
-  logo: /images/sections/skills/powerautomate.png
-  summary: "Created work flow automation to reduce manual effort."
-  categories: ["scripting-automation"]
-  url: "https://techcommunity.microsoft.com/t5/power-automate/ct-p/PowerAutomate"
-
-- name: Power Apps
-  logo: /images/sections/skills/powerapp.png
-  summary: "Created custom applications to improve productivity."
-  categories: ["scripting-automation"]
-  url: "https://powerapps.microsoft.com/en-us/"
-
-- name: Power BI
-  logo: /images/sections/skills/powerbi.png
-  summary: "Build interactive dashboards and reports"
-  categories: ["data-reporting"]
-  url: "https://community.powerbi.com/"
-
-- name: Alteryx
-  # logo: /images/sections/skills/alteryx.svg
-  summary: "Data analytics and automation platform used for ETL, workflow automation, and advanced data processing."
-  categories: ["data-reporting", "scripting-automation"]
-  url: "https://www.alteryx.com/"
-
-
-- name: Azure
+- name: Identity & Endpoint Engineering (Entra ID & Intune)
   logo: /images/sections/skills/azure.png
-  summary: "Azure Cloud Computing"
-  categories: ["cloud-infrastructure"]
-  url: "https://azure.microsoft.com/en-us/"
+  summary: "Microsoft Entra ID, Conditional Access, SAML/OIDC federation, Intune endpoint configuration, compliance policies, and Autopilot."
+  categories: ["cloud-identity", "infra-devops"]
+  url: "https://learn.microsoft.com/en-us/entra/"
 
-- name: AWS
+- name: PowerShell & Python Automation
+  logo: /images/sections/skills/powershell.png
+  summary: "Modular automation utilizing Microsoft Graph API, REST APIs, and unattended runbooks for identity lifecycle and cloud operations."
+  categories: ["automation-ai"]
+  url: "https://learn.microsoft.com/en-us/powershell/"
+
+- name: AI-Augmented Engineering
+  logo: /images/sections/skills/ai.svg
+  summary: "Accelerated script generation, debugging, and full-stack internal tooling using Claude, Antigravity, and VS Code workflows."
+  categories: ["automation-ai"]
+  url: "https://github.com/dannoprojects"
+
+- name: AWS & Azure Cloud Operations
   logo: /images/sections/skills/aws.png
-  summary: "Manage and optimize cloud infrastructure including EC2 Linux instances, CloudWatch alarms and monitoring, IAM, and cost-optimization savings plans."
-  categories: ["cloud-infrastructure", "os-devops"]
+  summary: "AWS EC2, IAM, CloudWatch, Savings Plans optimization, and Azure resource administration."
+  categories: ["cloud-identity", "infra-devops"]
   url: "https://aws.amazon.com/"
 
-- name: Git
-  logo: /images/sections/skills/git.png
-  summary: "Manage code repositories"
-  categories: ["development-version-control"]
-  url: "https://git-scm.com/"
-
-- name: Docker
-  logo: /images/sections/skills/docker.svg
-  summary: "Write most of the programs as dockerized container. Experienced with multi-stage, multi-arch build process."
-  categories: ["development-version-control"]
+- name: Linux & Containerization
+  logo: /images/sections/skills/linux.png
+  summary: "Administer production AWS Linux instances and self-hosted Debian/ARM environments (Tailscale/Raspberry Pi); package internal Python and monitoring utilities as multi-architecture Docker containers."
+  categories: ["infra-devops"]
   url: "https://www.docker.com/"
 
-- name: Linux
-  logo: /images/sections/skills/linux.png
-  summary: "Using as the main operating system. Capable of writing bash/shell scripts."
-  categories: ["os-devops"]
-
-
+- name: Git & CI/CD
+  logo: /images/sections/skills/git.png
+  summary: "Version control, branching strategies, and automated deployment pipelines via GitHub and Azure DevOps."
+  categories: ["infra-devops", "automation-ai"]
+  url: "https://github.com/"

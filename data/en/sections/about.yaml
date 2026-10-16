@@ -8,7 +8,7 @@ section:
   template: sections/about.html
 
 # your designation
-designation: Systems Engineer
+designation: Senior Systems & Cloud Infrastructure Engineer
 # your company information
 company:
   name: Broadpin
@@ -16,16 +16,9 @@ company:
 
 # your resume. this file path should be relative to you "static" directory
 # resume: "files/resume.pdf"
-# a new comment
+
 # a summary about you
-summary: "As a Systems Engineer at Broadpin, I collaborate within a larger global team while serving as the sole engineer managing all IT operations \
- and infrastructure across North America. I lead regional administration, proactive monitoring, and cloud operations—managing our AWS and Microsoft \ 
- environments, troubleshooting Linux EC2 instances, and ensuring zero-downtime reliability through robust security controls and certificate lifecycle \ 
- management. My focus is on building resilient systems and automation workflows that simplify operations, eliminate manual effort, and drive \ 
- operational efficiency. \n
- 
- Beyond my professional work, I am a Certified Motorcycle Safety Instructor with Pacific Motorcycle Training, helping riders develop the skills they need for safe and responsible motorcycling. Additionally, I enjoy 3D printing as a hobby, exploring innovative designs and creating functional projects that merge technology and creativity
- "
+summary: "Senior Systems & Cloud Infrastructure Engineer based in the San Francisco Bay Area specializing in Microsoft 365 Architecture, Entra ID / Zero Trust Security, Intune Endpoint Engineering, Microsoft Purview Compliance, AWS Cloud Operations, and AI-Augmented Automation. \n\nServing as the primary infrastructure engineer managing IT operations and cloud environments across North America at Broadpin, I architect zero-downtime M&A migrations, harden hybrid identity and endpoint estates, and drive proactive cloud reliability across AWS and Microsoft ecosystems. \n\nI combine deep production infrastructure experience with modern AI engineering workflows (Antigravity, Claude, VS Code)—rapidly architecting resilient PowerShell and Python automation, Microsoft Graph API integrations, and internal web applications that eliminate operational bottlenecks and scale enterprise capability. \n\nBeyond enterprise systems, I am a Certified Motorcycle Safety Instructor with Pacific Motorcycle Training—a role that demands calm communication, systematic risk mitigation, and disciplined coaching in high-stakes environments."
 
 # your social links
 # give as many as you want. use font-awesome for the icons.

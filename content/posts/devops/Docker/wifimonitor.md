@@ -1,14 +1,14 @@
 ---
 title: "WiFi Monitor System"
 date: 2025-04-20T00:00:00-08:00
-draft: false
+draft: true
 theme: default
-menu:
-  sidebar:
-    name: "WiFi Monitor System"
-    identifier: wifi-monitor
-    parent: docker
-    weight: 220
+# menu:
+#   sidebar:
+#     name: "WiFi Monitor System"
+#     identifier: wifi-monitor
+#     parent: docker
+#     weight: 220
 description: "Automated solution for monitoring and maintaining reliable WiFi connectivity."
 tags: ["Docker", "DevOps", "Networking"]
 hero: images/site/custom-hero.jpg

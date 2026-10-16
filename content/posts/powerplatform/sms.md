@@ -52,6 +52,6 @@ Displaying the remaining character count from a text input.  My text input is na
 "Characters remaining:  " & Text(149-Len(SmsMessage.Text))
 ```
 #### Additional Features to Implement
-- I had a requirement to get the PowerApp deployed quickly, so leveraged static SharePoint Online lists for mobile numbers. Not all of our employees have corporate issued devices and were not Azure Active Directory. I'd like to query AAD for corporate mobile devices and combine a short list of non published numbers. This would reduce the amount of effort to keep the lists current.
+- I had a requirement to get the PowerApp deployed quickly, so leveraged static SharePoint Online lists for mobile numbers. Not all of our employees have corporate issued devices and were not in Microsoft Entra ID. I'd like to query Microsoft Entra ID for corporate mobile devices and combine a short list of non published numbers. This would reduce the amount of effort to keep the lists current.
 - Record responses from message recipients.  I believe that I'll implement this by giving the option of creating and sending a MS Form in the case of emergency contacts. 
 - Record messages sent.  This could be implemented by writing to another SharePoint list as a log.  Additionally, I could display the list as a gallery in another screen.

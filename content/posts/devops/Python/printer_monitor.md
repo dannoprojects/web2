@@ -1,15 +1,15 @@
 ---
 title: "Printer Monitor: Because Printers Are Out to Get Us"
 date: 2025-04-14T00:00:00-08:00
-draft: false
+draft: true
 theme: default
 
-menu:
-  sidebar:
-    name: "Printer Monitor: Because Printers Are Out to Get Us"
-    identifier: python-printer-monitor
-    parent: python
-    weight: 210
+# menu:
+#   sidebar:
+#     name: "Printer Monitor: Because Printers Are Out to Get Us"
+#     identifier: python-printer-monitor
+#     parent: python
+#     weight: 210
 
 description: "Automate printer supply monitoring and notifications with Python"
 tags:

@@ -9,8 +9,8 @@ menu:
     identifier: cisco-firepower-saml-mfa
     parent: networking
     weight: 310
-description: "Step-by-step guide for setting up Azure AD SAML authentication with MFA for Cisco Firepower VPN access, including the CLI commands missing from Microsoft's documentation."
-tags: ["Cisco", "Firepower", "SAML", "MFA", "VPN", "ASDM", "Azure AD", "Entra ID"]
+description: "Step-by-step guide for setting up Microsoft Entra ID SAML authentication with MFA for Cisco Firepower VPN access, including the CLI commands missing from Microsoft's documentation."
+tags: ["Cisco", "Firepower", "SAML", "MFA", "VPN", "ASDM", "Microsoft Entra ID", "Entra ID"]
 hero: images/site/custom-hero.jpg
 ---
 
@@ -23,7 +23,7 @@ This guide fills in those gaps and documents the lessons learned during implemen
 ## Prerequisites
 
 - Cisco Firepower 1120 with appropriate licensing and AnyConnect
-- Azure AD (Microsoft Entra ID) tenant with administrative access
+- Microsoft Entra ID tenant with administrative access
 - Access to Firepower via ASDM or CLI
 - Your Firepower VPN's public FQDN and SSL certificate configured
 
@@ -31,7 +31,7 @@ This guide fills in those gaps and documents the lessons learned during implemen
 
 ### Step 1: Create the Enterprise Application in Azure
 
-Follow Microsoft's guide to create the Cisco Secure Firewall app in Azure AD:
+Follow Microsoft's guide to create the Cisco Secure Firewall app in Microsoft Entra ID:
 
 1. Sign in to the [Azure portal](https://portal.azure.com/)
 2. Navigate to **Microsoft Entra ID** > **Enterprise Applications**
@@ -94,7 +94,7 @@ write mem
 ```
 
 **Configuration parameters:**
-- `[YourTrustpointName]` - A descriptive name for the Azure AD certificate (e.g., "AzureAD-SAML")
+- `[YourTrustpointName]` - A descriptive name for the Microsoft Entra ID certificate (e.g., "EntraID-SAML")
 - `[AZURE-TENANT-ID]` - Your Azure tenant ID from Step 4
 - `[YourFirewallSSLCertName]` - The existing SSL certificate trustpoint name on your Firepower
 - `[your-vpn-fqdn.domain.com]` - Your VPN's public FQDN (must match Azure configuration)
@@ -132,8 +132,8 @@ The `base-url` in your Firepower configuration must exactly match the URLs confi
 
 1. Clear your browser cache or use an incognito window
 2. Navigate to your VPN URL: `https://[your-vpn-fqdn.domain.com]`
-3. You should be redirected to the Azure AD login page
-4. After authenticating with Azure AD (and completing MFA), you should be redirected back to the VPN portal
+3. You should be redirected to the Microsoft Entra ID login page
+4. After authenticating with Microsoft Entra ID (and completing MFA), you should be redirected back to the VPN portal
 5. AnyConnect should download and connect automatically
 
 ## Troubleshooting
@@ -180,7 +180,7 @@ debug webvpn saml 255
 
 ## Conclusion
 
-The Microsoft documentation provides a good foundation, but the actual CLI configuration for Firepower is the critical missing piece. With SAML and Azure AD MFA properly configured, you have a secure, modern authentication method for your VPN that meets current security standards.
+The Microsoft documentation provides a good foundation, but the actual CLI configuration for Firepower is the critical missing piece. With SAML and Microsoft Entra ID MFA properly configured, you have a secure, modern authentication method for your VPN that meets current security standards.
 
 ## References
 
