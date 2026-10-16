@@ -1,14 +1,14 @@
 ---
 title: "Barcode Canvas App"
 date: 2022-01-08T06:49:22-08:00
-draft: false
+draft: true
 theme: Toha
-menu:
-    sidebar:
-        name: PowerApps Barcode Reader
-        identifier: powerplatform-barcode
-        parent: powerplatform
-        weight: 40
+# menu:
+#     sidebar:
+#         name: PowerApps Barcode Reader
+#         identifier: powerplatform-barcode
+#         parent: powerplatform
+#         weight: 40
 hero: images/site/custom-hero.jpg
 ---
 

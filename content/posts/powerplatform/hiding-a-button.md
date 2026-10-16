@@ -1,14 +1,14 @@
 ---
 title: "Hiding a Button"
 date: 2022-02-01T18:59:41-08:00
-draft: false
+draft: true
 theme: Toha
-menu:
-    sidebar:
-        name: Button Permissions
-        identifier: powerplatform-Hiding-button
-        parent: powerplatform
-        weight: 45
+# menu:
+#     sidebar:
+#         name: Button Permissions
+#         identifier: powerplatform-Hiding-button
+#         parent: powerplatform
+#         weight: 45
 hero: images/site/custom-hero.jpg
 ---
 

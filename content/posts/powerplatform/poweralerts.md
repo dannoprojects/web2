@@ -1,14 +1,14 @@
 ---
 title: "PowerAutomate with Twilio Integration for Electricity Outages."
 date: 2021-11-05T06:49:22-08:00
-draft: false
+draft: true
 theme: Toha
-menu:
-    sidebar:
-        name: Power Outage Notifications
-        identifier: powerplatform-poweroutagenotifications
-        parent: powerplatform
-        weight: 30
+# menu:
+#     sidebar:
+#         name: Power Outage Notifications
+#         identifier: powerplatform-poweroutagenotifications
+#         parent: powerplatform
+#         weight: 30
 hero: images/site/custom-hero.jpg
 ---
 

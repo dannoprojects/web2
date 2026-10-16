@@ -13,7 +13,7 @@ hero: images/site/custom-hero.jpg
 ---
 I’ve been working on a canvas app to track and manage major IT projects. The app uses a SharePoint list as a datasource.  Our executives also use the app and the PowerBI dashboard to review projects that require executive approval in the form of what we call our Change Advisory Board (CAB).
 
-I recieved feedback from a member of our CAB.  “It would be nice to separate out the completed projects from all the other projects.” 
+I received feedback from a member of our CAB.  “It would be nice to separate out the completed projects from all the other projects.” 
  
 I thought it would be easy to change my filter syntax to include  project status of “not completed”.  Wrong.  You cannot delegate “not” when using a SharePoint list.  
 

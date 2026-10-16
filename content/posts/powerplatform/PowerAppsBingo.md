@@ -1,14 +1,14 @@
 ---
 title: "Bingo Canvas App"
 date: 2021-12-15T06:49:22-08:00
-draft: false
+draft: true
 theme: Toha
-menu:
-    sidebar:
-        name: PowerApps Bingo
-        identifier: powerplatform-bingo
-        parent: powerplatform
-        weight: 35
+# menu:
+#     sidebar:
+#         name: PowerApps Bingo
+#         identifier: powerplatform-bingo
+#         parent: powerplatform
+#         weight: 35
 hero: images/site/custom-hero.jpg
 ---
 
