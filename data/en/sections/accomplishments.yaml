@@ -13,15 +13,15 @@ section:
 
 accomplishments:
 
-- name: "Microsoft Information Protection Administrator (SC-400) – In Progress"
+- name: "Microsoft Certified: Information Security Administrator Associate (SC-401) – In Progress"
   timeline: "In Progress"
   organization:
     name: Microsoft
-    url: "https://learn.microsoft.com/en-us/credentials/certifications/information-protection-administrator/"
+    url: "https://learn.microsoft.com/en-us/credentials/certifications/information-security-administrator/"
   courseOverview: Advanced security, compliance, and governance certification validating enterprise architecture expertise in Microsoft Purview data loss prevention (DLP), information protection sensitivity labels, data lifecycle management, insider risk management, and regulatory compliance.
 
 - name: "Oracle Cloud Support Specialist"
-  timeline: "2024"
+  timeline: "May 2025"
   organization:
     name: Oracle
     url: "https://www.oracle.com/cloud/"
