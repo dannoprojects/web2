@@ -39,7 +39,7 @@
 &lt;h2 id="install-and-configure-docker"&gt;Install and Configure Docker&lt;/h2&gt;
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=DockerPi_install"&gt;&lt;/script&gt;
 &lt;h2 id="configure-jenkins-to-run-in-a-docker-image"&gt;Configure Jenkins to Run in a Docker image&lt;/h2&gt;
-&lt;p&gt;Create a file named &amp;ldquo;Dockerfile.jenkins with the following content and change the group ID to the Docker group
+&lt;p&gt;Create a file named &amp;ldquo;Dockerfile.jenkins&amp;rdquo; with the following content and change the group ID to the Docker group
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=jenkins_setup"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;Add the following to the Jenkins file
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=JenkinsDockerFile"&gt;&lt;/script&gt;&lt;/p&gt;
@@ -47,7 +47,7 @@
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=BuildRunCustomImage"&gt;&lt;/script&gt;</description></item><item><title>Delegation</title><link>https://www.dannoprojects.com/posts/powerplatform/delegation/</link><pubDate>Sun, 13 Mar 2022 18:59:41 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/delegation/</guid><description>&lt;p&gt;I’ve been working on a canvas app to track and manage major IT projects. The app uses a SharePoint list as a datasource. Our executives also use the app and the PowerBI dashboard to review projects that require executive approval in the form of what we call our Change Advisory Board (CAB).&lt;/p&gt;
 &lt;p&gt;I received feedback from a member of our CAB. “It would be nice to separate out the completed projects from all the other projects.”&lt;/p&gt;</description></item><item><title>SMS Notification PowerApp with Twilio Integration</title><link>https://www.dannoprojects.com/posts/powerplatform/sms/</link><pubDate>Mon, 01 Jun 2020 06:49:22 -0800</pubDate><guid>https://www.dannoprojects.com/posts/powerplatform/sms/</guid><description>&lt;h3 id="sms-notification-powerapp-with-twilio-integration"&gt;SMS Notification PowerApp with Twilio Integration&lt;/h3&gt;
 &lt;h4 id="problem"&gt;Problem&lt;/h4&gt;
-&lt;p&gt;Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obyashi approximately $5000 per year even if no messages are ever sent. That&amp;rsquo;s five thousand to reserve the right to use the platform.&lt;/p&gt;
+&lt;p&gt;Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obayashi approximately $5000 per year even if no messages are ever sent. That&amp;rsquo;s five thousand to reserve the right to use the platform.&lt;/p&gt;
 &lt;p&gt;I was asked to take a look at different platforms to reduce cost.&lt;/p&gt;
 &lt;h4 id="solution"&gt;Solution&lt;/h4&gt;
-&lt;p&gt;I built a PowerApp that uses a Twilio connector. We pay for the messages that we use at a rate of 0.0075 per message and $1.00 per month to reserve a local number. This solution saved Obayashi about $4990 in cost.&lt;/p&gt;</description></item></channel></rss>
+&lt;p&gt;I built a PowerApp that uses a Twilio connector. We pay for the messages that we use at a rate of $0.0075 per message and $1.00 per month to reserve a local number. This solution saved Obayashi about $4990 in cost.&lt;/p&gt;</description></item></channel></rss>

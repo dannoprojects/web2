@@ -2,7 +2,7 @@
 &lt;h2 id="install-and-configure-docker"&gt;Install and Configure Docker&lt;/h2&gt;
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=DockerPi_install"&gt;&lt;/script&gt;
 &lt;h2 id="configure-jenkins-to-run-in-a-docker-image"&gt;Configure Jenkins to Run in a Docker image&lt;/h2&gt;
-&lt;p&gt;Create a file named &amp;ldquo;Dockerfile.jenkins with the following content and change the group ID to the Docker group
+&lt;p&gt;Create a file named &amp;ldquo;Dockerfile.jenkins&amp;rdquo; with the following content and change the group ID to the Docker group
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=jenkins_setup"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;Add the following to the Jenkins file
 &lt;script src="https://gist.github.com/dannoprojects/d9fa3c3d2bc91a7861c92eb3c85635eb.js?file=JenkinsDockerFile"&gt;&lt;/script&gt;&lt;/p&gt;
