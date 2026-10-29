@@ -27,4 +27,11 @@ accomplishments:
     url: "https://www.oracle.com/cloud/"
   courseOverview: Validates foundational knowledge and hands-on operational support expertise across Oracle Cloud Infrastructure (OCI) architecture, core services, and administration.
 
+- name: "Total Control Beginner Riding Clinic"
+  timeline: "December 2024"
+  organization:
+    name: Total Control Training / CMSP
+    url: "https://www.totalcontroltraining.net/"
+  courseOverview: Certified motorcycle safety instructor for the California Motorcyclist Safety Program (CMSP) Total Control Beginner Riding Clinic, coaching riders in foundational motorcycle control, risk management, and defensive street riding strategies.
+
 

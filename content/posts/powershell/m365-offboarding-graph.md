@@ -11,7 +11,7 @@ menu:
     identifier: m365-offboarding-graph
     parent: powershell
     weight: 10
-tags: ["PowerShell", "Microsoft Graph", "Microsoft Entra ID", "Entra ID", "PIM", "Exchange Online", "Automation", "Offboarding"]
+tags: ["PowerShell", "Microsoft Graph", "Microsoft Entra ID", "PIM", "Exchange Online", "Automation", "Offboarding"]
 categories: ["PowerShell"]
 ---
 

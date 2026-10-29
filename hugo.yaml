@@ -65,10 +65,10 @@ params:
     # inverted: /images/site/inverted-logo.png
     # favicon: /images/site/favicon.png  # Temporarily commented out
 
-  # GitHub repo of your site
-  gitRepo: https://github.com/dannoprojects/web2
+  # GitHub repo of your site (commented out to disable "Improve this page" link)
+  # gitRepo: https://github.com/dannoprojects/web2
   # Default branch of your Git repo
-  gitBranch: main
+  # gitBranch: main
 
   # Configure the number of section title visible in the top navbar
   topNavbar:

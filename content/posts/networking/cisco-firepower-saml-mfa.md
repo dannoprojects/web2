@@ -10,7 +10,7 @@ menu:
     parent: networking
     weight: 310
 description: "Step-by-step guide for setting up Microsoft Entra ID SAML authentication with MFA for Cisco Firepower VPN access, including the CLI commands missing from Microsoft's documentation."
-tags: ["Cisco", "Firepower", "SAML", "MFA", "VPN", "ASDM", "Microsoft Entra ID", "Entra ID"]
+tags: ["Cisco", "Firepower", "SAML", "MFA", "VPN", "ASDM", "Microsoft Entra ID"]
 hero: images/site/custom-hero.jpg
 ---
 

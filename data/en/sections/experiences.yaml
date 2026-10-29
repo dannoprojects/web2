@@ -16,7 +16,7 @@ experiences:
     location: Half Moon Bay, CA
     overview: Consulting and Technology Solutions for Project-Based Organizations
   positions:
-  - designation: Senior Systems Engineer
+  - designation: "Systems Administrator, North America"
     start: December 2024
     responsibilities:
     - "**M&A Cloud Migrations & Identity Security:** Led and executed end-to-end Google Workspace to Microsoft 365 cutover for 70 users with zero business communication downtime, configuring DNS cutovers and SPF/DKIM/DMARC authentication hardening."
