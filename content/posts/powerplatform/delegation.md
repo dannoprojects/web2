@@ -9,6 +9,7 @@ menu:
         identifier: powerplatform-delegation
         parent: powerplatform
         weight: 50
+tags: ["Power Platform"]
 hero: images/site/custom-hero.jpg
 ---
 I’ve been working on a canvas app to track and manage major IT projects. The app uses a SharePoint list as a datasource.  Our executives also use the app and the PowerBI dashboard to review projects that require executive approval in the form of what we call our Change Advisory Board (CAB).

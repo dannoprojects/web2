@@ -26,40 +26,40 @@ skills:
   logo: /images/sections/skills/cloud.png
   summary: "Tenant-to-tenant migrations, Exchange Online, SharePoint architecture, Microsoft Purview DLP, sensitivity labels, and compliance governance."
   categories: ["cloud-identity"]
-  url: "https://learn.microsoft.com/en-us/purview/"
+  url: "/posts/m365/"
 
 - name: Identity & Endpoint Engineering (Entra ID & Intune)
   logo: /images/sections/skills/azure.png
   summary: "Microsoft Entra ID, Conditional Access, SAML/OIDC federation, Intune endpoint configuration, compliance policies, and Autopilot."
   categories: ["cloud-identity", "infra-devops"]
-  url: "https://learn.microsoft.com/en-us/entra/"
+  url: "/tags/microsoft-entra-id/"
 
 - name: PowerShell & Python Automation
   logo: /images/sections/skills/powershell.png
   summary: "Modular automation utilizing Microsoft Graph API, REST APIs, and unattended runbooks for identity lifecycle and cloud operations."
   categories: ["automation-ai"]
-  url: "https://learn.microsoft.com/en-us/powershell/"
+  url: "/posts/powershell/"
 
 - name: AI-Augmented Engineering
   logo: /images/sections/skills/ai.svg
   summary: "Accelerated script generation, debugging, and full-stack internal tooling using Claude, Antigravity, and VS Code workflows."
   categories: ["automation-ai"]
-  url: "https://github.com/dannoprojects"
+  url: "/posts/security/hardening-legacy-linux-web-stacks/"
 
 - name: AWS & Azure Cloud Operations
   logo: /images/sections/skills/aws.png
   summary: "AWS EC2, IAM, CloudWatch, Savings Plans optimization, and Azure resource administration."
   categories: ["cloud-identity", "infra-devops"]
-  url: "https://aws.amazon.com/"
+  url: "/tags/aws/"
 
 - name: Linux & Containerization
   logo: /images/sections/skills/linux.png
   summary: "Administer production AWS Linux instances and self-hosted environments (Debian/Ubuntu, ARM/x86 architectures, and WireGuard/Tailscale mesh networking); package internal Python and monitoring utilities as multi-architecture Docker containers."
   categories: ["infra-devops"]
-  url: "https://www.docker.com/"
+  url: "/posts/devops/docker/"
 
 - name: Git & CI/CD
   logo: /images/sections/skills/git.png
   summary: "Version control, branching strategies, and automated deployment pipelines via GitHub and Azure DevOps."
   categories: ["infra-devops", "automation-ai"]
-  url: "https://github.com/"
+  url: "/posts/devops/docker/dockerpi/"

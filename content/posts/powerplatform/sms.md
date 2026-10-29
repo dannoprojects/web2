@@ -9,17 +9,18 @@ menu:
         identifier: powerplatform-sms
         parent: powerplatform
         weight: 25
+tags: ["Power Platform"]
 hero: images/site/custom-hero.jpg
 ---
 
 ### SMS Notification PowerApp with Twilio Integration
 #### Problem
-Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obyashi approximately $5000 per year even if no messages are ever sent.  That's five thousand to reserve the right to use the platform. 
+Obayashi has a subscription to an SMS Emergency Notification platform. Access to the platform costs Obayashi approximately $5000 per year even if no messages are ever sent.  That's five thousand to reserve the right to use the platform. 
 
 I was asked to take a look at different platforms to reduce cost. 
 #### Solution
 
-I built a PowerApp that uses a Twilio connector.  We pay for the messages that we use at a rate of 0.0075 per message and $1.00 per month to reserve a local number.  This solution saved Obayashi about $4990 in cost. 
+I built a PowerApp that uses a Twilio connector.  We pay for the messages that we use at a rate of $0.0075 per message and $1.00 per month to reserve a local number.  This solution saved Obayashi about $4990 in cost. 
 
 The PowerApp allows a member of HR or executive to send a SMS message selected groups.
 

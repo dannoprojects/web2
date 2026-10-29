@@ -23,7 +23,7 @@ Step-by-step guide to set up a Raspberry Pi to run Docker and Jenkins.
 {{< gist dannoprojects d9fa3c3d2bc91a7861c92eb3c85635eb "DockerPi_install">}}
 
 ## Configure Jenkins to Run in a Docker image
-Create a file named "Dockerfile.jenkins with the following content and change the group ID to the Docker group
+Create a file named "Dockerfile.jenkins" with the following content and change the group ID to the Docker group
 {{< gist dannoprojects d9fa3c3d2bc91a7861c92eb3c85635eb "jenkins_setup">}}
 
 Add the following to the Jenkins file
